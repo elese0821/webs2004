@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퀴즈 이펙트01</title>    
+    <link rel="stylesheet" href="assets/css/quiz.css">
+    <link rel="stylesheet" href="assets/css/ani.css">
+</head>
+<body>
+    <header id="header">
+        <h1><a href="../index.html">Quiz</a></h1>
+        <nav>
+            <ul>
+                <li><a href="quizEffect01.html">1</a></li>
+                <li><a href="quizEffect02.html">2</a></li>
+                <li class="active"><a href="quizEffect03.html">3</a></li>
+                <li><a href="quizEffect04.html">4</a></li>
+                <li><a href="quizEffect05.html">5</a></li>
+                <li><a href="quizEffect06.html">6</a></li>
+                <li><a href="quizEffect07.html">7</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <div class="quiz__wrap">
+            <div class="quiz">
+                <div class="quiz__header">
+                </div>
+                <div class="quiz__main">
+                    <div class="quiz__question">
+                        <em></em>.
+                        <span></span>
+                    </div>
+                    <div class="quiz__choice">
+                        <label for="choice1">
+                            <input type="radio" id="choice1" name="choice" value="1">
+                            <span></span>
+                        </label>
+                        <label for="choice2">
+                            <input type="radio" id="choice2" name="choice" value="2">
+                            <span></span>
+                        </label>
+                        <label for="choice3">
+                            <input type="radio" id="choice3" name="choice" value="3">
+                            <span></span>
+                        </label>
+                        <label for="choice4">
+                            <input type="radio" id="choice4" name="choice" value="4">
+                            <span></span>
+                        </label>
+                    </div>
+                    <div class="quiz__answer none">
+                    </div>
+                    <div class="quiz__desc none">
+                    </div>
+                </div>
+                <div class="quiz__footer">
+                    <button class="quiz__confirm">정답 확인하기</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+        <a href="mailto:elese0821@naver.com">elese0821@naver.com</a>
+    </footer>
+    <!-- //foter -->
+    <script>
+        // 선택자
+        const quizWrap = document.querySelector(".quiz__wrap");
+        const quizHeader = quizWrap.querySelector(".quiz__header");
+        const quizQuestion = quizWrap.querySelector(".quiz__question");
+        const quizAnswer = quizWrap.querySelector(".quiz__answer");
+        const quizDesc = quizWrap.querySelector(".quiz__desc");
+        const quizChoice = quizWrap.querySelectorAll(".quiz__choice span");
+        const quizSelect = quizWrap.querySelectorAll(".quiz__choice input");
+
+
+        const quizConfirm = quizWrap.querySelector(".quiz__confirm");
+
+        // 문제 정보
+        const quizInfo = [
+            {
+                infoDate : "2021년 10월",
+                infoType : "정보처리기능사",
+                infoNum : "1",
+                infoQuestion : "입출력 조작의 시간과 중앙 처리 장치의 처리 시간과의 불균형을 보완하는 것은?",
+                infoChoice : ["선, 색체, 공간, 수량", "점, 선, 면, 질감", "시간, 수량, 구조, 공간" , "면, 구조, 공간, 수량"],
+                infoAnswer : "2",
+                infoDesc : "채널 : 주기억 장치와 입출력 장치 사이에서 CPU와 독립적으로 데이터를 처리함으로써 CPU의 부담을 덜고 작업 효율을 높이기 위한 회로 또는 소형 컴퓨터로 제어 장치에서 명령을 전달받음",
+            }
+        ];
+            // quizDate.innerText= quizInfo[0].infoDate;
+            // quizType.innerText= quizInfo[0].infoType;
+            // quizNum.innerText= quizInfo[0].infoNum;
+            // quizQuestion.innerText= quizInfo[0].infoQuestion;
+            // quizAnswer.innerText= quizInfo[0].infoAnswer;
+            // quizDesc.innerText= quizInfo[0].infoDesc;
+
+            // 문제 출력
+            // <span class="quiz__date">quizInfo[0].infoDate</span>
+            // <span class="quiz__type">quizInfo[0].infoType</span>
+
+
+            quizHeader.innerHTML = quizInfo[0].infoDate + " " + quizInfo[0].infoType;
+            quizQuestion.innerHTML = quizInfo[0].infoNum + ". " + quizInfo[0].infoQuestion;
+            quizAnswer.innerText = quizInfo[0].infoAnswer;
+            quizDesc.innerText = quizInfo[0].infoDesc;
+
+            for(let i=0; i<quizChoice.length; i++){
+                quizChoice[i].innerText = quizInfo[0].infoChoice[i];
+            };
+
+            // 정답 확인
+            quizConfirm.addEventListener("click", ()=> {
+                let selectedChoice = null;
+
+                for(let i=0; i<quizChoice.length; i++){
+                    if(quizSelect[i].checked){
+                        selectedChoice = quizSelect[i].value;
+                        break;
+                    }
+                }
+
+                if(selectedChoice !== null){
+                    if(selectedChoice == quizInfo[0].infoAnswer){
+                        alert("정답입니다.");
+                        quizDesc.classList.remove("none");
+                    } else {
+                        alert("오답입니다.")
+                        quizAnswer.classList.remove("none");
+                        quizDesc.classList.remove("none");
+                    }
+                } else {
+                    alert("보기를 선택해주세요!");
+                }
+
+            });
+
+
+            
+    </script>
+</body>
+</html>

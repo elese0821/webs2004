@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        { 
+            const arr = [1,2,3,4,5,6,7,8,9,10]
+
+    //   01. for
+            for(let i=0; i<arr.length; i++){
+                document.write(arr[i])
+            }
+            document.write("<br>");
+    //   01.  foreach
+            arr.forEach((el) =>
+                document.write(el)
+            );
+            
+            document.write("<br>");
+    //   01.  for of
+            for(let el of arr){
+                document.write(el)
+            }
+            document.write("<br>");
+    //   01.  for in
+            for(let el in arr){
+                document.write(arr[el])
+            }
+
+            document.write("<br>");
+    //   01.  map
+            arr.map((el) =>
+                document.write(el)
+            );
+            
+            document.write("<br>");
+
+    //   01.  filter
+            arr.filter((el) =>
+                document.write(el)
+            );
+            
+            document.write("<br>");
+
+        }
+    // 07 1-100 까지 합
+    {
+        let num = 0
+        for(let i=1; i<=100; i++){
+            num += i
+        };
+        
+        document.write(num);
+    }
+    
+    document.write("<br>");
+    // 0 구구단 8단
+    {
+        for(let i=8; i<9; i++){
+            for(let j=1; j<10; j++){
+                document.write(i + " X " + j + " = " + i*j + "<br>")
+            }
+        }
+    }
+            document.write("<br>");
+    // 0 테이블 만들기10*10
+    {
+        table = "<table>";
+        for(let i=1; i<=10; i++){
+            table += "<tr>"
+                for(let j=1; j<=10; j++){
+                    table += "<td>" + i*j +"</td>"
+                }
+            table += "</tr>"
+        }
+        table += "</table>";
+
+        document.write(table);
+    }
+
+    //   01. 선언
+    
+    //   02.  익명
+    //   03.  매개
+    //   04.  리턴
+    //   05.  매+리
+    //   06. 선언
+    //   07.  익명
+    //   08.  매개
+    //   09.  리턴
+    //   10.  익명 +매+리
+    {
+        const func = (str) => {
+            return str
+        };
+        document.write(func("함수가 실행되었습니다.<br>"));
+    }
+    //   10.  익명 +매+리 +괄호생략
+    
+    {
+        const func = str => {
+            return str
+        };
+        document.write(func("함수가 실행되었습니다.<br>"));
+    }
+    //   10.  익명 +매+리 +괄호생략 +리턴생략
+    
+    {
+        const func = str => str
+        document.write(func("함수가 실행되었습니다.<br>"));
+    }
+    //   10.  선언함수 익명 +매+리 +괄호생략 +리턴생략
+
+    {
+        func = str => str
+        document.write(func("함수가 실행되었습니다.<br>"));
+    }
+       
+    </script>
+</body>
+</html>
