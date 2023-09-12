@@ -297,7 +297,8 @@ body::after {
     content: " 정답 : ";
 }
 .quiz__footer {}
-.quiz__confirm {
+.quiz__confirm,
+.quiz__next {
     background-color: #4668a6eb;
     color: #fff;
     text-align: center;
@@ -309,6 +310,7 @@ body::after {
     border: 1px dashed transparent;
     border-radius: 3px;
 }
+.quiz__next:hover,
 .quiz__confirm:hover {
     border: 1px dashed #4668a6eb;
     background-color: transparent;

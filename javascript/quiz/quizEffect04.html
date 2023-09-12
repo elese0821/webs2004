@@ -6,22 +6,8 @@
     <title>퀴즈 이펙트04</title>
 
     <link rel="stylesheet" href="assets/css/quiz.css">
-    <link rel="stylesheet" href="assets/css/ani.css">
     <style>
-        .quiz__score{
-            position: fixed;
-            left: 20PX;
-            bottom: 10px;
-            width: 70px;
-            height: 50px;
-            line-height: 50px;
-            border-radius: 10px;
-            color: #fff;
-            background-color: #5774db;
-            text-align: center;
-            line-height: 50px;
-            font-size: 20px;
-        }
+
     </style>
 </head>
 <body>
@@ -45,7 +31,6 @@
 
     <main id="main">
         <div class="quiz__wrap"></div>
-        <div class="quiz__score"></div>
     </main>
     <!-- //main -->
 
@@ -55,10 +40,8 @@
     <!-- //footer -->
 
     <script>
-        // 선택자 
-        const quizWrap = document.querySelector(".quiz__wrap"); 
-        const quizScore = document.querySelector(".quiz__score");
-        let totalScore = 0;
+        // 선택자
+        const quizWrap = document.querySelector(".quiz__wrap");
 
         // 문제 정보
         const quizInfo = [
@@ -100,85 +83,91 @@
                 infoDesc : "명령어를 가지고 오는것을 fetch cycle 이라고 합니다."
             }
         ];
-
         // 문제 출력
-        const updateQuiz = () => {
+        const updataQuiz = () => {
             const quizArray = [];
-        
+
             quizInfo.forEach((quiz, index) => {
                 quizArray.push(`
-                    <div class="quiz">
-                        <div class="quiz__header">${quiz.infoDate} ${quiz.infoType}</div>
-                        <div class="quiz__main">
-                            <div class="quiz__question">${index+1}. ${quiz.infoQuestion}</div>
-                            <div class="quiz__choice">
-                                <label for="choice1-${index}">
-                                    <input type="radio" id="choice1-${index}" name="choice${index}" value="1">
-                                    <span>${quiz.infoChoice[1]}</span>
-                                </label>
-                                <label for="choice2-${index}">
-                                    <input type="radio" id="choice2-${index}" name="choice${index}" value="2">
-                                    <span>${quiz.infoChoice[2]}</span>
-                                </label>
-                                <label for="choice3-${index}">
-                                    <input type="radio" id="choice3-${index}" name="choice${index}" value="3">
-                                    <span>${quiz.infoChoice[3]}</span>
-                                </label>
-                                <label for="choice4-${index}">
-                                    <input type="radio" id="choice4-${index}" name="choice${index}" value="4">
-                                    <span>${quiz.infoChoice[4]}</span>
-                                </label>
-                            </div>
-                            <div class="quiz__answer">${quiz.infoAnswer}</div>
-                            <div class="quiz__desc none">${quiz.infoDesc}</div>
+                <div class="quiz">
+                    <div class="quiz__header">${quiz.infoDate} ${quiz.infoType}</div>
+                    <div class="quiz__main">
+                        <div class="quiz__question">${index+1}. ${quiz.infoQuestion}
                         </div>
-                        <div class="quiz__footer">
-                            <button class="quiz__confirm" data-index="${index}">정답 확인하기</button>
+                        <div class="quiz__choice">
+                            <label for="choice1-${index}">
+                                <input type="radio" id="choice1-${index}" name="choice-${index}" value="1">
+                                <span>${quiz.infoChoice[1]}</span>
+                            </label>
+                            <label for="choice2-${index}">
+                                <input type="radio" id="choice2-${index}" name="choice-${index}" value="2">
+                                <span>${quiz.infoChoice[2]}</span>
+                            </label>
+                            <label for="choice3-${index}">
+                                <input type="radio" id="choice3-${index}" name="choice-${index}" value="3">
+                                <span>${quiz.infoChoice[3]}</span>
+                            </label>
+                            <label for="choice4-${index}">
+                                <input type="radio" id="choice4-${index}" name="choice-${index}" value="4">
+                                <span>${quiz.infoChoice[4]}</span>
+                            </label>
                         </div>
+                        <div class="quiz__answer none">${quiz.infoAnswer}</div>
+                        <div class="quiz__desc none">${quiz.infoDesc}</div>
                     </div>
+                    <div class="quiz__footer">
+                    <button class="quiz__confirm" data-index="${index}">정답 확인하기</button>
+                    </div>
+                </div>
                 `);
+                
+                quizWrap.innerHTML = quizArray.join("");
             });
+        };
+        updataQuiz();
 
-            quizWrap.innerHTML = quizArray.join(" ");
-        }
-        
         // 정답 확인
         const answerQuiz = (index) => {
-            const quizChoices = document.querySelectorAll(`.quiz__choice input[name="choice${index}"]:checked`);
-            const answerElement = quizWrap.querySelectorAll(".quiz__answer")[index];
-            const descElement = quizWrap.querySelectorAll(".quiz__desc")[index];
+            const quizChoices = quizWrap.querySelectorAll(`.quiz__choice input[name="choice-${index}"]:checked`);
             const quizElement = quizWrap.querySelectorAll(".quiz")[index];
+            const descElement = quizWrap.querySelectorAll(`.quiz__desc`)[index];
+            const answerElement = quizWrap.querySelectorAll(`.quiz__answer`)[index];
+            const confirmElement = quizWrap.querySelectorAll(".quiz__confirm")[index];
 
             if (quizChoices.length > 0) {
-                const userAnswer = quizChoices[0].value;
-
-                if (userAnswer === quizInfo[index].infoAnswer) {
-                    answerElement.textContent = "정답입니다!";
+                const userAnswer = quizChoices[0].value; // 사용자가 체크한 정답
+                if(userAnswer === quizInfo[index].infoAnswer){
                     quizElement.classList.add("good");
-                    totalScore++;
-                    quizScore.innerHTML = totalScore
-                    
-                } else {
-                    answerElement.textContent = "오답입니다!";
+                    descElement.classList.remove("none");
+                } else{
                     quizElement.classList.add("bad");
                     descElement.classList.remove("none");
-                }
+                    answerElement.classList.remove("none");
+                };
+                confirmElement.classList.add("none");
+            } else {
+                alert("보기를 선택해주세요!");
             }
-        }
+        };
 
         // 페이지가 로드된 후 실행
         document.addEventListener("DOMContentLoaded", () => {
-            updateQuiz();
+            updataQuiz();
 
-            const confirmButtons = document.querySelectorAll(".quiz__confirm");
-            confirmButtons.forEach((button, index) => {
+            const quizConfirm = document.querySelectorAll(".quiz__confirm");
+
+            quizConfirm.forEach((button, index) => {
                 button.addEventListener("click", () => {
                     answerQuiz(index);
                 });
             });
         });
 
-    
+
+        // const aa = ["10", "20", "30", "40"];
+        // alert(aa.join(" "));
+
+
     </script>
 </body>
 </html>
