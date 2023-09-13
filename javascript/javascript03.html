@@ -617,9 +617,24 @@ func라는 함수를 정의합니다. 이 함수는 두 개의 매개변수 num�
                 </div>
                 <!-- //smaple17 -->
                 <div id="sample18" class="sample">
-                    <h3></h3>
+                    <h3>18. 함수 유형 : 프로토타입 함수</h3>
                     <p></p>
-<pre><code class="language-js">
+<pre><code class="language-js">{
+        function Func(num, str){
+            this.num = num;
+            this.str = str;
+        }
+
+        Func.prototype.result = function(){
+            console.log(`${this.num}. ${this.str}`);
+        }
+        
+        const info1 = new Func(21, "함수가 실행되었습니다.");
+        const info2 = new Func(22, "함수가 실행되었습니다.");
+
+        info1.result();
+        info2.result();
+}
 </code></pre>
                     <p class="desc"></p>
                     <div class="result">
@@ -633,9 +648,28 @@ func라는 함수를 정의합니다. 이 함수는 두 개의 매개변수 num�
                 </div>
                 <!-- //smaple18 -->
                 <div id="sample19" class="sample">
-                    <h3></h3>
+                    <h3> 19. 함수 유형 : 객체 리터럴 함수</h3>
                     <p></p>
 <pre><code class="language-js">{
+        function Func(num, str){
+            this.num = num;
+            this.str = str;
+        }
+
+        Func.prototype = {
+            result1 : function(){
+                console.log(`${this.num}. ${this.str}`);
+            },
+            result2 : function(){
+                console.log(`${this.num}. ${this.str}`);
+            },
+        }
+
+        const info1 = new Func(23, "함수가 실행되었습니다.");
+        const info2 = new Func(24, "함수가 실행되었습니다.");
+
+        info1.result1();
+        info2.result2();
 }
 </code></pre>
                     <p class="desc"></p>
@@ -650,7 +684,7 @@ func라는 함수를 정의합니다. 이 함수는 두 개의 매개변수 num�
                 </div>
                 <!-- //smaple19 -->
                 <div id="sample20" class="sample">
-                    <h3></h3>
+                    <h3>20. 클래스</h3>
                     <p></p>
 <pre><code class="language-js">{
 }
