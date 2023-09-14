@@ -41,13 +41,13 @@
 :root {
     --black: #5f5649;
     --white: #d5d5d5;
-    --primary-color: #ffca4d;
+    --primary-color: #f9d270;
     --primary-color-dark: #ee7331;
     --primary-color-tint: #e9effa;
     --secondary-color: #ffefd2;
     --secondary-color-tint: #6d8fcea6;
-    --secondary-color-dark: #f7be4c;
-    --accent-color: #ff7d7d;
+    --secondary-color-dark: #fcdf97;
+    --accent-color: #fda8a8;
     --background: #fff;
     --circle-sizing: 18rem;
     --circle-rotate: 0deg;
