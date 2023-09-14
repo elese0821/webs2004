@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>데이터 효과</title>
+    <title>문자열 객체</title>
     <link rel="stylesheet" href="https://webfontworld.github.io/gmarket/GmarketSans.css">
     <link rel="stylesheet" href="https://websfont.github.io/nanumSquareNeo/nanumSquareNeo.css">
     <link rel="stylesheet" href="css/style.css">
@@ -76,24 +76,57 @@
                     <li><a href="#sample33">33. <strong>string.prototype.valueOf()</strong>           메서드는 객체의 원시값을 반환합니다.</a></li>
                 </ul>
             </div>
-            <div class="main__sample">
-                <div id="sample01" class="sample">
-                    <h3>30. string.prototype.trim()</h3>
-                    <p>메서는 문자열의 앞/뒤 공백을 제거하고, 새로운 문자열은 반호나합니다.</p>
+                <div class="main__sample">
+                    <div id="sample27" class="sample">
+                        <h3>27. string.prototype.toLowerCase()</h3>
+                        <p>문자열을 소문자로 변환하는 메서드입니다. 이 메서드를 호출하면 대문자로 구성된 문자열의 모든 알파벳 문자가 소문자로 변경됩니다.</p>
 <pre class="line-numbers"><code class="language-js">{
-    const greeting = '   Hello world!   ';
+            const originalString = "Hello World";
+            const lowerCaseString = originalString.toLowerCase();
 
-    console.log(greeting);
-    // Expected output: "   Hello world!   ";
-    
-    console.log(greeting.trim());
-    // Expected output: "Hello world!";    
+            console.log(lowerCaseString); // "hello world"
 }</code></pre>
-                    <p class="desc">메서드는 문자열 양 끝의 공백을 제거하고 원본 문자열을 수정하지 않고 새로운 문자열을 반환합니다. 여기서 말하는 공백이란 모든 공백문자(space, tab, NBSP 등)와 모든 개행문자(LF, CR 등)를 의미합니다.</p>
-                </div>
-            </div>
-        </main>
-        <!--//main -->
+                        <p class="desc">
+                            위 예제에서는 toLowerCase() 메서드를 사용하여 originalString 변수에 저장된 문자열을 소문자로 변환한 후, 결과를 lowerCaseString 변수에 저장하고 콘솔에 출력했습니다.<br>
+                            이 메서드는 주로 사용자 입력을 정규화하거나, 문자열을 비교할 때 대소문자를 무시하고 비교하는 데 유용하게 사용됩니다.</p>
+                    </div>
+                    <!-- //sample27 -->
+
+                    <div id="sample28" class="sample">
+                        <h3>28. string.prototype.toUpperCase()</h3>
+                        <p>문자열을 대문자로 변환하는 메서드입니다. 이 메서드를 호출하면 문자열 내의 모든 알파벳 문자가 대문자로 변경됩니다.</p>
+<pre class="line-numbers"><code class="language-js">{
+            const originalString = "Hello World";
+            const upperCaseString = originalString.toUpperCase();
+
+            console.log(upperCaseString); // "HELLO WORLD"
+}</code></pre>
+                        <p class="desc">
+                            위 예제에서는 toUpperCase() 메서드를 사용하여 originalString 변수에 저장된 문자열을 대문자로 변환한 후, 결과를 upperCaseString 변수에 저장하고 콘솔에 출력했습니다.
+                            이 메서드는 주로 문자열을 대문자로 표시하고 비교할 때 사용됩니다. <br>
+                            예를 들어, 문자열 비교 시 대소문자를 무시하고 싶을 때 유용합니다.
+                        </p>
+                    </div>
+                    <!-- //sample28 -->
+
+                    <div id="sample30" class="sample">
+                        <h3>30. string.prototype.trim()</h3>
+                        <p>trim메서드는 문자열의 앞/뒤 공백을 제거하고, 새로운 문자열은 반호나합니다.</p>
+<pre class="line-numbers"><code class="language-js">{
+            const greeting = '   Hello world!   ';
+
+            console.log(greeting);
+            // Expected output: "   Hello world!   ";
+
+            console.log(greeting.trim());
+            // Expected output: "Hello world!";    
+}</code></pre>
+                        <p class="desc">메서드는 문자열 양 끝의 공백을 제거하고 원본 문자열을 수정하지 않고 새로운 문자열을 반환합니다. 여기서 말하는 공백이란 모든 공백문자(space, tab, NBSP 등)와 모든 개행문자(LF, CR 등)를 의미합니다.</p>
+                    </div>
+                    <!-- //smaple30 -->
+
+            </main>
+            <!--//main -->
 
         <footer id="footer">
             <a href="mailto:elese0821@naver.com">elese0821@naver.com</a>

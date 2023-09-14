@@ -41,26 +41,26 @@
         <main id="main">
             <div class="main__menu">
                 <ul>
-                    <li><a href="#">01. 함수 : 선언적 함수</a></li>
-                    <li><a href="#">02. 함수 : 익명 함수</a></li>
-                    <li><a href="#">03. 함수 : 매개변수 함수</a></li>
-                    <li><a href="#">04. 함수 : 리턴값 함수</a></li>
-                    <li><a href="#">05. 함수 : 매개변수 + 리턴값 함수</a></li>
-                    <li><a href="#">06. 화살표 함수 : 선언적 함수</a></li>
-                    <li><a href="#">07. 화살표 함수 : 익명 함수</a></li>
-                    <li><a href="#">08. 화살표 함수 : 매개변수 함수</a></li>
-                    <li><a href="#">09. 화살표 함수 : 리턴값 함수</a></li>
-                    <li><a href="#">10. 화살표 함수 : 익명 함수 + 매개변수 + 리턴값</a></li>
-                    <li><a href="#">11. 함수 유형 : 함수와 매개변수를 이용한 형태</a></li>
-                    <li><a href="#">12. 함수 유형 : 함수와 변수를 이용한 형태</a></li>
-                    <li><a href="#">13. 함수 유형 : 함수와 배열을 이용한 형태</a></li>
-                    <li><a href="#">14. 함수 유형 : 함수와 객체를 이용한 형태</a></li>
-                    <li><a href="#">15. 함수 유형 : 함수와 객체 및 배열을 이용한 형태</a></li>
-                    <li><a href="#">16. 함수 유형 : 객체 안에 함수를 이용한 형태</a></li>
-                    <li><a href="#">17. 함수 유형 : 객체 생성자 함수</a></li>
-                    <li><a href="#">18. 함수 유형 : 프로토타입 함수</a></li>
-                    <li><a href="#">19. 함수 유형 : 객체 리터럴 함수</a></li>
-                    <li><a href="#">20. 클래스</a></li>
+                    <li><a href="#sample01">01. 함수 : 선언적 함수</a></li>
+                    <li><a href="#sample02">02. 함수 : 익명 함수</a></li>
+                    <li><a href="#sample03">03. 함수 : 매개변수 함수</a></li>
+                    <li><a href="#sample04">04. 함수 : 리턴값 함수</a></li>
+                    <li><a href="#sample05">05. 함수 : 매개변수 + 리턴값 함수</a></li>
+                    <li><a href="#sample06">06. 화살표 함수 : 선언적 함수</a></li>
+                    <li><a href="#sample07">07. 화살표 함수 : 익명 함수</a></li>
+                    <li><a href="#sample08">08. 화살표 함수 : 매개변수 함수</a></li>
+                    <li><a href="#sample09">09. 화살표 함수 : 리턴값 함수</a></li>
+                    <li><a href="#sample10">10. 화살표 함수 : 익명 함수 + 매개변수 + 리턴값</a></li>
+                    <li><a href="#sample11">11. 함수 유형 : 함수와 매개변수를 이용한 형태</a></li>
+                    <li><a href="#sample12">12. 함수 유형 : 함수와 변수를 이용한 형태</a></li>
+                    <li><a href="#sample13">13. 함수 유형 : 함수와 배열을 이용한 형태</a></li>
+                    <li><a href="#sample14">14. 함수 유형 : 함수와 객체를 이용한 형태</a></li>
+                    <li><a href="#sample15">15. 함수 유형 : 함수와 객체 및 배열을 이용한 형태</a></li>
+                    <li><a href="#sample16">16. 함수 유형 : 객체 안에 함수를 이용한 형태</a></li>
+                    <li><a href="#sample17">17. 함수 유형 : 객체 생성자 함수</a></li>
+                    <li><a href="#sample18">18. 함수 유형 : 프로토타입 함수</a></li>
+                    <li><a href="#sample19">19. 함수 유형 : 객체 리터럴 함수</a></li>
+                    <li><a href="#sample20">20. 클래스</a></li>
                 </ul>
             </div>
             <!-- //main__menu -->
@@ -672,7 +672,7 @@ func라는 함수를 정의합니다. 이 함수는 두 개의 매개변수 num�
                 <!-- //smaple18 -->
                 <div id="sample19" class="sample">
                     <h3> 19. 함수 유형 : 객체 리터럴 함수</h3>
-                    <p></p>
+                    <p>JavaScript를 사용하여 객체 지향 프로그래밍(OOP)의 개념을 보여주는 예제입니다.</p>
 <pre><code class="language-js">{
         function Func(num, str){
             this.num = num;
@@ -695,12 +695,39 @@ func라는 함수를 정의합니다. 이 함수는 두 개의 매개변수 num�
         info2.result2();
 }
 </code></pre>
-                    <p class="desc"></p>
+                    <p class="desc">
+                        1. function Func(num, str):<br>
+                        - 이 함수는 두 개의 매개변수 num과 str을 받는 생성자 함수입니다.<br>
+                        - num은 숫자를, str은 문자열을 나타내며, 이 함수를 사용하여 객체를 생성할 때 값을 초기화하는 데 사용됩니다.<br>
+                        2. this.num 및 this.str:<br>
+                        - 생성자 함수 내에서 this 키워드를 사용하여 객체의 프로퍼티를 초기화합니다.<br>
+                        - this.num은 생성자 함수가 받은 num 매개변수의 값을 저장하고, this.str은 str 매개변수의 값을 저장합니다.<br>
+                        3. Func.prototype 객체:<br>
+                        - Func.prototype 객체를 정의하여 생성자 함수 Func의 프로토타입을 설정합니다.<br>
+                        - 이 프로토타입 객체는 두 개의 메서드인 result1과 result2를 가집니다.<br>
+                        4. result1 메서드:<br>
+                        - result1 메서드는 객체의 num과 str 값을 출력하는 역할을 합니다.<br>
+                        - ${this.num}. ${this.str}를 사용하여 객체의 num과 str 값을 문자열로 합쳐서 출력합니다.<br>
+                        5. result2 메서드:<br>
+                        - result2 메서드 역시 객체의 num과 str 값을 출력하는 역할을 합니다.<br>
+                        - ${this.num}. ${this.str}를 사용하여 객체의 num과 str 값을 문자열로 합쳐서 출력합니다.<br>
+                        6. 객체 생성:<br>
+                        - const info1 = new Func(23, "함수가 실행되었습니다.");를 통해 Func 생성자 함수를 사용하여 info1 객체를 생성합니다. 이 객체는 num에 23을, str에 "함수가 실행되었습니다."를 가지고 초기화됩니다.<br>
+                        - const info2 = new Func(24, "함수가 실행되었습니다.");를 통해 Func 생성자 함수를 사용하여 i nfo2 객체를 생성합니다. 이 객체는 num에 24를, str에 "함수가 실행되었습니다."를 가지고 초기화됩니다.<br>
+                        7.메서드 호출:<br>
+                        - info1.result1();을 호출하여 info1 객체의 result1 메서드를 실행합니다. 이 메서드는 "23. 함수가 실행되었습니다."라는 문자열을 콘솔에 출력합니다.<br>
+                        - info2.result2();을 호출하여 info2 객체의 result2 메서드를 실행합니다. 이 메서드는 "24. 함수가 실행되었습니다."라는 문자열을 콘솔에 출력합니다.<br>
+                        <br>
+                        이 코드의 주요 포인트는 생성자 함수와 프로토타입을 사용하여 객체를 생성하고, 메서드를 프로토타입에 추가하여 객체들이 공통으로 사용할 수 있는 메서드를 정의하는 방법을 보여줍니다.<br>
+                        결과적으로 두 개의 객체가 동일한 메서드를 호출하여 다른 데이터를 출력하는 것을 확인할 수 있습니다.
+
+                    </p>
                     <div class="result">
                         <details>
                             <summary>결과 확인하기</summary>
                             <div>
-                                
+                                23. 함수가 실행되었습니다.<br>
+                                24. 함수가 실행되었습니다.
                             </div>
                         </details>
                     </div>

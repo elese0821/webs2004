@@ -219,6 +219,19 @@ table tr td.left {
     text-align: left;
 }
 
+/* quiz */
+
+
+.quiz100 {
+    margin-bottom: 20px;
+    background-color: #4668a6eb;
+    color: #fff !important;
+    transition: all .3s;
+}
+.quiz100:hover {
+    background-color: #8aa5d7eb  !important;
+    border: 1px solid #8aa5d7eb ;
+}
 /* //table */
 
 @media (max-width: 800px){

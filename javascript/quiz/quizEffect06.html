@@ -70,10 +70,8 @@
             fetch("https://elese0821.github.io/webs2004/json/gineungsaJC2005_02.json")
             .then(res => res.json())
             .then(items => {
-                console.log(items[0].question);
                 quizInfo[0] = items[0].question, items[0].desc;
-                console.log(quizInfo);
-
+                
                 updataQuiz(quizInfo);
             })
             .catch((error) => console.log(error));
