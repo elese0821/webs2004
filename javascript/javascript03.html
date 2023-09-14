@@ -618,7 +618,7 @@ func라는 함수를 정의합니다. 이 함수는 두 개의 매개변수 num�
                 <!-- //smaple17 -->
                 <div id="sample18" class="sample">
                     <h3>18. 함수 유형 : 프로토타입 함수</h3>
-                    <p></p>
+                    <p> JavaScript를 사용하여 객체 지향 프로그래밍(OOP)의 개념을 보여주는 예제입니다.</p>
 <pre><code class="language-js">{
         function Func(num, str){
             this.num = num;
@@ -636,7 +636,29 @@ func라는 함수를 정의합니다. 이 함수는 두 개의 매개변수 num�
         info2.result();
 }
 </code></pre>
-                    <p class="desc"></p>
+                    <p class="desc">
+                        1. function Func(num, str):<br>
+                        - 이 함수는 두 개의 매개변수 num과 str을 받는 생성자 함수입니다.<br>
+                        -num은 숫자를, str은 문자열을 나타내며, 이 함수를 사용하여 객체를 생성할 때 값을 초기화하는 데 사용됩니다.<br>
+                        2. this.num 및 this.str:<br>
+                        - 생성자 함수 내에서 this 키워드를 사용하여 객체의 프로퍼티를 초기화합니다.<br>
+                        - this.num은 생성자 함수가 받은 num 매개변수의 값을 저장하고, this.str은 str 매개변수의 값을 저장합니다.<br>
+                        3. Func.prototype.result:<br>
+                        - Func 생성자 함수의 프로토타입에 result 메서드를 추가합니다.<br>
+                        - 이 메서드는 객체가 호출할 수 있으며, 객체의 num 및 str 속성을 출력하는 역할을 합니다.<br>
+                        4. const info1 = new Func(21, "함수가 실행되었습니다.");:<br>
+                        - Func 생성자 함수를 사용하여 info1 객체를 생성합니다. 이 객체는 num에 21을, str에 "함수가 실행되었습니다."를 가지고 초기화됩니다.<br>
+                        5. const info2 = new Func(22, "함수가 실행되었습니다.");:<br>
+                        - 마찬가지로 Func 생성자 함수를 사용하여 info2 객체를 생성합니다. 이 객체는 num에 22를, str에 "함수가 실행되었습니다."를 가지고 초기화됩니다.<br>
+                        6. info1.result();:<br>
+                        - info1 객체의 result 메서드를 호출합니다.<br>
+                        - 이 메서드는 객체의 num과 str 값을 출력합니다. 따라서 "21. 함수가 실행되었습니다."가 콘솔에 출력됩니다.<br>
+                        7. info2.result();:<br>
+                        - 마찬가지로 info2 객체의 result 메서드를 호출합니다.<br>
+                        - 이번에는 info2 객체의 num과 str 값을 출력하므로 "22. 함수가 실행되었습니다."가 콘솔에 출력됩니다.
+                        <br>
+                        이 코드의 주요 포인트는 객체 지향 프로그래밍의 개념 중 하나인 생성자 함수와 프로토타입을 사용하여 객체를 생성하고 메서드를 공유하는 방법을 보여줍니다. 생성자 함수를 사용하여 객체를 초기화하고, 프로토타입을 활용하여 모든 객체가 공통으로 사용할 수 있는 메서드를 정의합니다.
+                    </p>
                     <div class="result">
                         <details>
                             <summary>결과 확인하기</summary>

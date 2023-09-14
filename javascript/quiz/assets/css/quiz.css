@@ -262,6 +262,26 @@ body::after {
     background-color: #f1f6ff;
 }
 
+.quiz__choice .choice {
+    border: 1px solid #eee;
+    padding: 17px;
+    margin-bottom: 10px;
+}
+.quiz__choice .choice:nth-child(1)::before {
+    content: "1. ";
+}
+.quiz__choice .choice:nth-child(2)::before {
+    content: "2. ";
+}
+.quiz__choice .choice:nth-child(3)::before {
+    content: "3. ";
+}
+.quiz__choice .choice:nth-child(4)::before {
+    content: "4. ";
+}
+.quiz__choice .choice.correct {}
+.quiz__choice .choice.incorrect {}
+
 .quiz__answer {
     background-color: #4668a6eb;
     border: 1px solid #4668a6eb;
@@ -297,8 +317,7 @@ body::after {
     content: " 정답 : ";
 }
 .quiz__footer {}
-.quiz__confirm,
-.quiz__next {
+.quiz__confirm{
     background-color: #4668a6eb;
     color: #fff;
     text-align: center;
@@ -310,12 +329,77 @@ body::after {
     border: 1px dashed transparent;
     border-radius: 3px;
 }
-.quiz__next:hover,
 .quiz__confirm:hover {
     border: 1px dashed #4668a6eb;
     background-color: transparent;
     color: #4668a6eb;
     cursor: pointer;
+}
+.quiz__next {
+    width: 100%;
+    border: 1px dashed #4668a6eb;
+    padding: 15px 20px;
+    background-color: #fff;
+    cursor: pointer;
+    color: #4668a6eb;
+}
+.quiz__next:hover {
+    background-color: #e5eeffeb;
+}
+.quiz__indicator {
+    background-color: #e4edffeb;
+    padding: 20px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.quiz__indicator span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #4668a6eb;
+    box-shadow: 1px 1px #4668a6eb;
+}
+.quiz__indicator span.correct {
+    background-color: #4668a6eb;
+    position: relative;
+}
+.quiz__indicator span.correct::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    left: 1px;
+    top: 1px;
+    position: absolute;
+}
+.quiz__indicator.correct {
+    background-color: #4668a6eb;
+}
+.quiz__indicator span.incorrect {
+    position: relative;
+}
+.quiz__indicator span.incorrect::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 7px;
+    width: 14px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #4668a6eb;
+    transform: rotate(-45deg);
+}
+.quiz__indicator span.incorrect::after {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 7px;
+    width: 14px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #4668a6eb;
+    transform: rotate(45deg);
 }
 
 /* footer */
