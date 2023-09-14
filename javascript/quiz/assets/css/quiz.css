@@ -179,7 +179,6 @@ body::after {
     transform: rotate(-45deg);
     z-index: 100;
 }
-
 .quiz__header {
     margin-bottom: 20px;
     color: #6d8fceb7;
@@ -208,6 +207,15 @@ body::after {
     line-height: 1.4;
     font-weight: 400;
 }
+
+.quiz__img {
+    margin-bottom: 10px;
+}
+.quiz__img img{
+    border: 1px solid #eee;
+    width: 100%;
+}  
+
 .quiz__choice {
     margin-bottom: 20px;
 }
@@ -265,23 +273,67 @@ body::after {
 .quiz__choice .choice {
     border: 1px solid #eee;
     padding: 17px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: border-color .3s, background-color 0.3s;
+    border-radius: 3px;
+    color: #666;
 }
-.quiz__choice .choice:nth-child(1)::before {
-    content: "1. ";
+.quiz__choice .choice:hover {
+    border-color: #a8bde5eb;
+    cursor: pointer;
+    background-color: #f2f7ffeb;
 }
-.quiz__choice .choice:nth-child(2)::before {
-    content: "2. ";
+.quiz__choice .choice.correct {
+    position: relative;
+    border-color: #395489eb;
+    background-color: #ebf2ffeb;
+    padding-right: 57px;
 }
-.quiz__choice .choice:nth-child(3)::before {
-    content: "3. ";
+.quiz__choice .choice.correct::after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border: 6px solid #395489eb;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
-.quiz__choice .choice:nth-child(4)::before {
-    content: "4. ";
+.quiz__choice .choice.incorrect {
+    position: relative;
+    border-color: #e35f5feb;
+    background-color: #ffeeeeeb;
+    padding-right: 57px;
 }
-.quiz__choice .choice.correct {}
-.quiz__choice .choice.incorrect {}
-
+.quiz__choice .choice.incorrect::before {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 6px;
+    background-color: #aa2929;
+    border-radius: 4px;
+    transform: rotate(45deg);
+    margin-top: -3px;
+}
+.quiz__choice .choice.incorrect::after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 6px;
+    background-color: #aa2929;
+    border-radius: 4px;
+    transform: rotate(-45deg);
+    margin-top: -3px;
+}
 .quiz__answer {
     background-color: #4668a6eb;
     border: 1px solid #4668a6eb;
@@ -342,6 +394,7 @@ body::after {
     background-color: #fff;
     cursor: pointer;
     color: #4668a6eb;
+    transition: all 0.3s;
 }
 .quiz__next:hover {
     background-color: #e5eeffeb;
