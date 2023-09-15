@@ -1,4 +1,5 @@
-/* _________________________________header_________________________________*/
+/* _________________________header_________________________ */
+
 .header__inner {
     display: flex;
     justify-content: space-between;
@@ -7,7 +8,7 @@
     padding: 0 20px;
     border-bottom: 1px solid #ccc;
 }
-.header__nav ul {
+.header__nav ul{
     display: flex;
 }
 .header__nav li a {
@@ -38,7 +39,7 @@
     height: 100%;
     padding: 18px 0 0 8px;
 }
-.header__ham span {
+.header__ham a span {
     display: block;
     width: 24px;
     height: 3px;
@@ -46,28 +47,27 @@
     border-radius: 3px;
     position: relative;
 }
-.header__ham span::before {
+.header__ham a span::before {
     content: '';
     width: 24px;
     height: 3px;
     background-color: #412c86;
-    border-radius: 3px;
     position: absolute;
     left: 0;
     bottom: 7px;
 }
-.header__ham span::after {
+.header__ham a span::after {
     content: '';
     width: 24px;
     height: 3px;
     background-color: #412c86;
     border-radius: 3px;
     position: absolute;
-    left: 0;
+    left: 0; 
     top: 7px;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
     .header__nav {
         display: none;
     }
@@ -75,7 +75,7 @@
         display: block;
     }
 }
-@media (max-width: 1200px){
+@media (max-width: 600px) {
     .header__inner {
         height: 60px;
         padding: 0 16px;
@@ -84,8 +84,11 @@
         width: 120px;
         padding-top: 5px;
     }
+    
 }
-/* _________________________________slider_________________________________*/
+
+/* _________________________slider_________________________ */
+
 .slider__inner {
     background-color: #a994ff;
     width: 100%;
@@ -132,14 +135,14 @@
     width: 30px;
     height: 56px;
     margin-top: -28px;
-    background-image: url(../image/slider01.jpg);
+    background-image: url(../image/slider_icon.svg);
     background-position: -50px 0;
 }
 .slider__dot a {
     display: inline-block;
     width: 16px;
     height: 16px;
-    background-image: url(../image/slider01.svg);
+    background-image: url(../image/slider_icon.svg);
     background-position: -20px -70px;
 }
 .slider__dot a.play {
@@ -152,7 +155,7 @@
     background-position: 0 -70px;
 }
 
-@media (max-width: 1290px) {
+@media (max-width: 1290px){
     .slider__inner > .slider {
         width: 100%;
         padding: 80px 16px;
@@ -163,7 +166,7 @@
         word-break: keep-all;
     }
 }
-@media (max-width: 800px) {
+@media (max-width: 800px){
     .slider__inner > .slider {
         background-size: 60%;
         background-position: center bottom 80px;
@@ -177,14 +180,14 @@
     .slider__arrow {
         display: none;
     }
-    .slider__dot{
+    .slider__dot {
         position: absolute;
         bottom: 50px;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%);
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 600px){
     .slider__text h3 {
         font-size: 34px;
     }
@@ -193,7 +196,7 @@
     }
 }
 
-/* _________________________________intro_________________________________*/
+/* _________________________intro_________________________ */
 .intro__inner {
     padding: 100px 0;
     overflow: hidden;
@@ -208,30 +211,32 @@
 }
 .intro__img .img1 {
     position: absolute;
-    left: -10%;
-    top: -30%;
+    left: 20%;
+    top: 10%;
 }
 .intro__img .img1 img {
     width: 700px;
 }
 .intro__img .img2 {
     position: absolute;
-    left: 15%;
-    top: -35%;
+    left: -25%;
+    top: -20%;
 }
 .intro__img .img2 img {
-    width: 720px;
+    width: 600px;
 }
 .intro__img .img3 {
     position: absolute;
     left: 50%;
     top: -20%;
-    transform: translateX(-50%);
+    transform: translate(-50%);
 }
 .intro__img .img3 img {
     width: 600px;
 }
 .intro__text {
+    position: relative;
+    z-index: 100;
     width: 33%;
     width: 415px;
     display: flex;
@@ -243,7 +248,7 @@
     font-size: 53px;
     line-height: 1.3;
     margin-bottom: 50px;
-    font-weight: 200;
+    font-weight: 300;
 }
 .intro__text h3 em {
     font-weight: 800;
@@ -253,8 +258,8 @@
     line-height: 1.5;
 }
 
-@media (max-width: 1200px) {
-    .intro__inner .container {
+@media (max-width: 1200px){
+    .intro__inner .container  {
         flex-direction: column-reverse;
     }
     .intro__inner {
@@ -263,35 +268,24 @@
     .intro__img {
         width: 100%;
     }
-    .intro__img .img1 {
-        left: -3%;
-        top: -10%;
-    }
-    .intro__img .img2 {
-        left: 20%;
-        top: -5%;
-    }
     .intro__img .img3 {
         position: relative;
         text-align: center;
         bottom: -10px;
     }
     .intro__text {
-        position: relative;
-        z-index: 100;
         width: 100%;
         flex-direction: column;
         text-align: center;
         padding-bottom: 0;
     }
 }
-
-@media (max-width: 800px) {
+@media (max-width: 800px){ 
     .intro__inner {
         padding-top: 80px;
     }
     .intro__text {
-        padding: 0;
+        padding-top: 0;
     }
     .intro__text h3 {
         font-size: 40px;
@@ -300,63 +294,45 @@
     .intro__text p {
         font-size: 16px;
     }
-    .intro__img .img2 {
-        left: 70px;
-        top: -51px;
-    }
-    .intro__img .img2 img {
-        width: 650px;
-    }
-    .intro__img .img1 {
-        top: -25px;
-        left: -80px;
-    }
-    .intro__img .img1 img {
-        width: 600px;
-    }
 }
-@media (max-width: 600px) {
+
+@media (max-width: 600px){ 
     .intro__text h3 {
         font-size: 34px;
-    }
+    }   
     .intro__text p {
         font-size: 14px;
     }
     .intro__img .img1 img {
         display: none;
     }
-    .intro__img .img2 {
-        left: 10px;
-        top: -5%;
-    }
     .intro__img .img2 img {
-        width: 125%;
+        width: 100%;
     }
     .intro__img .img3 img {
         width: 100%;
-        bottom: -10px;
     }
 }
-/* _______________________pointUse____________________________ */
-#pointUse {
-    background-color: #fff;
+/* _________________________pointuse_________________________ */
+.piontUse {
+    background-color: #F8F8F8;
 }
 .use__inner {
     padding: 100px 0;
 }
-.use__title {
+.use_title {
     margin-bottom: 40px;
 }
-.use__title h3 {
+.use_title h3 { 
     font-size: 45px;
     line-height: 1;
     font-weight: 800;
 }
-.use__title h3 em {
+.use_title h3 em {
     font-weight: 300;
 }
-.use__title h3 span {
-    font-size: 16px;
+.use_title h3 span {
+    font-size: 18px;
     font-weight: 400;
     color: #333;
 }
@@ -367,6 +343,7 @@
 .use__img > div {
     width: 32%;
     text-align: center;
+    position: relative;
 }
 .use__img > div figure {
     width: 100%;
@@ -374,7 +351,7 @@
 }
 .use__img > div figure img {
     border-radius: 20px;
-}
+} 
 .use__img > div figure::after {
     content: '';
     position: absolute;
@@ -382,12 +359,12 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #0000004f;
+    background-color: #00000054;
     backdrop-filter: blur(10px);
     z-index: 10;
     border-radius: 20px;
     opacity: 0;
-    transition: opacity 0.5s;
+    transition:  opacity 0.3s;
     cursor: pointer;
 }
 .use__img > div figcaption {
@@ -399,12 +376,13 @@
     color: #fff;
     z-index: 100;
     font-weight: 800;
+    transition:  opacity 0.5s;
     opacity: 0;
 }
-.use__img > div figure:hover::after {
+.use__img > div figure:hover:after {
     opacity: 1;
 }
-.use__img > div figure:hover figcaption {
+.use__img > div figure:hover figcaption{
     opacity: 1;
 }
 .use__img > div p {
@@ -412,16 +390,16 @@
     color: #6d6d6d;
     font-size: 16px;
 }
+
 @media (max-width: 800px){
     .use__inner {
         padding: 80px 0;
     }
-    .use__title h3 {
-        font-style: 34px;
+    .use_title h3 {
+        font-size: 34px;
         text-align: center;
-       
     }
-    .use__title h3 span {
+    .use_title h3 span {
         display: block;
         font-size: 16px;
         margin-top: 15px;
@@ -432,11 +410,11 @@
     .use__img > div {
         width: 60%;
         margin: 0 auto 40px auto;
-    } 
+    }
     .use__img > div:last-child {
         margin-bottom: 0;
     }
-    .use__img > div figure:hover::after {
+    .use__img > div figure:hover:after {
         opacity: 0;
     }
     .use__img > div figcaption {
@@ -444,15 +422,15 @@
         color: #000;
         opacity: 1;
         margin-top: 25px;
-        font-style: 18px;
+        font-size: 18px;
         font-weight: 500;
-    }
+    } 
     .use__img > div p {
         padding: 0;
         margin-top: -10px;
     }
 }
-@media (max-width: 800px){
+@media (max-width: 600px){
     .use__img > div {
         width: 100%;
     }
