@@ -75,6 +75,11 @@ em,
 address {
     font-style: normal;
 }
+/* 이미지 최적화 */
+img {
+    width: 100%;
+    vertical-align: top;
+}
 
 /* 이미지 대체(IR) 효과 */
 .ir {
