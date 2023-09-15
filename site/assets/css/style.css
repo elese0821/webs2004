@@ -320,18 +320,18 @@
 .use__inner {
     padding: 100px 0;
 }
-.use_title {
+.use__title {
     margin-bottom: 40px;
 }
-.use_title h3 { 
+.use__title h3 { 
     font-size: 45px;
     line-height: 1;
     font-weight: 800;
 }
-.use_title h3 em {
+.use__title h3 em {
     font-weight: 300;
 }
-.use_title h3 span {
+.use__title h3 span {
     font-size: 18px;
     font-weight: 400;
     color: #333;
@@ -395,11 +395,11 @@
     .use__inner {
         padding: 80px 0;
     }
-    .use_title h3 {
+    .use__title h3 {
         font-size: 34px;
         text-align: center;
     }
-    .use_title h3 span {
+    .use__title h3 span {
         display: block;
         font-size: 16px;
         margin-top: 15px;
