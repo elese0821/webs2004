@@ -142,7 +142,6 @@ a {
 }
 .modal__box {
     width: 70%;
-    height: 70vh;
     border-radius: 10px;
     background-color: #ccc;
 }
@@ -223,7 +222,7 @@ a {
     box-sizing: border-box;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    .download   
+
 }
 .modal__box .cont > div {
     display: none;
