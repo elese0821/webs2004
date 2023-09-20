@@ -41,7 +41,16 @@
         <main id="main">
             <div class="main__menu">
                 <ul>
-                    <li></li>
+                    <li><a href="#s01">01. <strong>Math.ramdom() : 랜덤값 반환(0~1 사이의 난수 값을 반환) : 반환(숫자)</strong></a></li>
+                    <li><a href="#s02">02. <strong>Math.round() : 반올림 : 반환(숫자)</strong></a></li>
+                    <li><a href="#s03">03. <strong>Math.floor() : 버림 : 반환(숫자)</strong></a></li>
+                    <li><a href="#s04">04. <strong>Math.ceil() : 올림 : 반환(숫자)</strong></a></li>
+                    <li><a href="#s05">05. <strong>Math.max() : 가장 큰 값 : 반환(숫자)</strong></a></li>
+                    <li><a href="#s06">06. <strong>Math.min() : 가장 작은 값 : 반환(숫자)</strong></a></li>
+                    <li><a href="#s07">07. <strong>Math.abs() : 절댓값 : 반환(숫자)</strong></a></li>
+                    <li><a href="#s08">08. <strong>Math.trunc() : 값의 정수 부분만 : 반환(숫자)</strong></a></li>
+                    <li><a href="#s09">09. <strong>Math.PI() : 원의 둘레에 대한 지름의 비율(π)을 나타내며 약 3.1459... : 반환(숫자)</strong></a></li>
+                    <li><a href="#s10">10. <strong>Math.sqrt() : 값의 제곱근을 반환 : 반환(숫자)</strong></a></li>
                 </ul>
             </div>
             <div class="main__sample">
@@ -56,5 +65,24 @@
     </div>
     <script src="../assets/js/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
+    <script>
+        // 01. <strong>Math.ramdom() : 랜덤값 반환(0~1 사이의 난수 값을 반환) : 반환(숫자)</strong>
+        const j = Math.floor(Math.random() * 4);
+        console.log(j);
+        // 02. <strong>Math.round() : 반올림 : 반환(숫자)</strong>
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        // 03. <strong>Math.floor() : 버림 : 반환(숫자)</strong>
+        // 04. <strong>Math.ceil() : 올림 : 반환(숫자)</strong>
+        // 05. <strong>Math.max() : 가장 큰 값 : 반환(숫자)</strong>
+        // 06. <strong>Math.min() : 가장 작은 값 : 반환(숫자)</strong>
+        // 07. <strong>Math.abs() : 절댓값 : 반환(숫자)</strong>
+        // 08. <strong>Math.trunc() : 값의 정수 부분만 : 반환(숫자)</strong>
+        // 09. <strong>Math.PI() : 원의 둘레에 대한 지름의 비율(π)을 나타내며 약 3.1459... : 반환(숫자)</strong>
+        // 10. <strong>Math.sqrt() : 값의 제곱근을 반환 : 반환(숫자)</strong>
+                        
+    </script>
 </body>
 </html>
