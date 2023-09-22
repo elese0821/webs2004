@@ -1,6 +1,6 @@
-# webs2004
+# webs2024
 수업시간에 정리한 내용입니다.
-https://elese0821.github.io/webs2004/
+https://elese0821.github.io/webs2024/
 
 ## 자바스크립트
 자바스크립트를 공부합니다.
