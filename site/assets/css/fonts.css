@@ -53,3 +53,26 @@
          url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Black.ttf") format("truetype");
     font-display: swap;
 } 
+.nanumSquareNeo {
+    font-family: "nanumSquareNeo";
+}
+.nanumSquareNeo300 {
+    font-family: "nanumSquareNeo";
+    font-weight: 300;
+}
+.nanumSquareNeo400 {
+    font-family: "nanumSquareNeo";
+    font-weight: 400;
+}
+.nanumSquareNeo700 {
+    font-family: "nanumSquareNeo";
+    font-weight: 700;
+}
+.nanumSquareNeo800 {
+    font-family: "nanumSquareNeo";
+    font-weight: 800;
+}
+.nanumSquareNeo900 {
+    font-family: "nanumSquareNeo";
+    font-weight: 900;
+}

@@ -4,7 +4,6 @@
 *:after {
     box-sizing: border-box;
 }
-
 /* 여백 초기화 */
 body,
 div,
@@ -27,6 +26,7 @@ form,
 legend,
 p,
 blockquote,
+table,
 th,
 tr,
 td,
@@ -46,7 +46,7 @@ input,
 select,
 table,
 textarea {
-    font-family: "nanumSquareNeo", "Apple SD Gothic Neo", "Malgun Godthic", "맑은 고딕", Arial, Helvetica, sans-serif;
+    font-family: "nanumSquareNeo", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -65,9 +65,8 @@ h4,
 h5,
 h6 {
     font-weight: normal;
-    font-size: 16px
+    font-size: 16px;
 }
-
 
 /* 리스트 스타일 초기화 */
 ul, ol, li {
@@ -86,7 +85,7 @@ img {
     vertical-align: top;
 }
 
-/* 이미지 대체:IR) 효과 */
+/* 이미지 대체(IR) 효과 */
 .ir {
     display: block;
     overflow: hidden;
