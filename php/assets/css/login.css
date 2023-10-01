@@ -1,0 +1,40 @@
+.login__inner {
+    min-width: 500px;
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+}
+.login__inner h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-family: GmarketSans;
+}
+.login__inner p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: var(--black300);
+}
+.login__inner form {
+    padding: 50px 0;
+}
+.login__inner input {
+    margin-bottom: 10px;
+}
+.btn__style2 {
+    width: 100%;
+    display: block;
+    background-color: var(--black);
+    background-color: var(--white);
+    font-size: 1.2rem;
+    border-radius: 30px;
+}
+.login__footer {
+    padding: 20px 0;
+    text-align-last: left;
+}
+.login__footer a {
+    text-decoration: underline;
+    text-underline-position: under;
+    color: var(--black300);
+}

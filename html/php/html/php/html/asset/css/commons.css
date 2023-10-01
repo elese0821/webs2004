@@ -1,0 +1,43 @@
+/* skip */
+#skip {
+    position: relative;
+    z-index: 1000000;
+}
+#skip a {
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    left: -400px;
+    top: 0;
+    padding: 20px 40px;
+}
+#skip a:active,
+#skip a:focus {
+    left: 0;
+}
+.gray {
+    background-color: var(--primary-color);
+}
+/* container */
+.container {
+    max-width: 1260px;
+    width: 96%;
+    margin: 0 auto;
+}
+/* intro__inner */
+.intro__inner {
+    text-align: center;
+}
+.intro__img {
+    max-width: 300px;
+    width: 100%;
+    margin: 2rem auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.intro__text {
+    font-size: 1.4rem;
+    padding: 0 20%;
+    word-break: keep-all;
+    font-weight: 300;
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ㄱㄹㄷ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #header {
+            height: 100px;
+            background-color: #EEEBE9;
+        }
+        #nav {
+            height: 100px;
+            background-color: #B9AAA5;
+        }
+        #main {
+            height: 780px;
+            background-color: #886F65;
+        }
+        #footer {
+            height: 100px;
+            background-color: #4E342E;
+        }
+        .container {
+            margin: 0 auto;
+            width: 1200px;
+            background-color: rgba(0,0,0,.2);
+            height: inherit;
+        }
+        .contents {
+            display: grid;
+            grid-template-areas: 
+            "cont1 cont1"
+            "cont2 cont2"
+            "cont3 cont4"
+            ;
+            grid-column: 50% 50%;
+            grid-row: 100px 200px 480px;
+        }
+        .cont1 {
+            width: 100%;
+            grid-area: cont1;
+            background-color: #74574A;
+        }
+        .cont2 {
+            width: 100%;
+            grid-area: cont2;
+            background-color: #684D43;
+        }
+        .cont3 {
+            width: 100%;
+            grid-area: cont3;
+            background-color: #594139;
+        }
+        .cont4 {
+            width: 100%;
+            grid-area: cont4;
+            background-color: #4A352F;
+        }
+        @media (max-width :1220px){
+            .container {
+                width: 90%;
+            }
+            .contents {
+                display: grid;
+                grid-template-areas: 
+                "cont1 cont2 cont2"
+                "cont1 cont3 cont4"
+                ;
+                grid-column: 33.3333% 33.3333% 33.3333%;
+                grid-row: repeat(3,1fr);
+            }
+        }
+        @media (max-width :768px){
+            .container {
+                width: 100%;
+            }
+            .contents {
+                display: grid;
+                grid-template-areas: 
+                "cont1 cont2"
+                "cont1 cont3"
+                "cont1 cont4"
+                ;
+                grid-column: 30% 70%;
+                grid-row: repeat(3,1fr);
+            }
+        }
+        @media (max-width :600px){
+            .contents {
+                display: grid;
+                grid-template-areas: 
+                "cont1"
+                "cont2"
+                "cont3"
+                "cont4"
+                ;
+                grid-column: 100%;
+                grid-row: 150px 210px 210px 210px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="container"></div>
+        </header>
+        <nav id="nav">
+            <div class="container"></div>
+        </nav>
+        <main id="main">
+            <div class="container contents">
+                <article class="cont1"></article>
+                <article class="cont2"></article>
+                <article class="cont3"></article>
+                <article class="cont4"></article>
+            </div>
+        </main>
+        <footer id="footer">
+            <div class="container"></div>
+        </footer>
+    </div>
+    <script>
+        // for
+        {
+            const arr = [1,2,3,4,5,6,7,8,9,10]
+            
+            for(let i=0;i<arr.length;i++){
+                document.write(arr[i]);
+            };
+        // foreach
+            arr.forEach((el) => {
+                document.write(el)
+            });
+        // for of
+            for(let el of arr){
+                document.write(el)
+            };
+        // for in
+        for(let el in arr){
+                document.write(arr[el])
+            };
+        // map
+        arr.map((el) =>
+        document.write(el))
+        // filter
+        arr.filter((el) =>
+        document.write(el))
+        }
+
+
+        // 1-100 더함
+        {
+            num=0
+            for(let i=1; i<=100; i++){
+                num +=i
+                document.write(num)
+            }
+        }
+        // 테이블만들기
+
+        {
+            table = "<table>"
+            for(let i=1; i<=10;i++){
+                table += "<tr>"
+                for(let j=1; j<=10; j++){
+                   table += "<td>" + i*j + "<td>"
+                }
+                table += "</tr>"
+            }
+            table += "</table>";
+
+            document.write(table);
+        }
+    
+
+        // 선언
+        {
+            function func(){
+                document.write("함수가 실행되었습니다.1")
+            };
+            func()
+        }
+        // 익명
+        {
+            const func = function(){
+                document.write("함수가 실행되었습니다.2")
+            };
+            func()
+        }
+        // 매개변수
+        {
+            const func = function(){
+                document.write("함수가 실행되었습니다.2")
+            };
+            func()
+        }
+        // 리턴값
+        // 매개변수 리턴값
+        // 화살표함수 (선언)
+        // 화살표함수 (익명)
+        // 화살표함수 (매개변수)
+        // 화살표함수 (리턴값)
+        // 화살표함수 (매개변수 리턴값)
+        // 화살표함수 (익명 매개변수 리턴값)
+        // 화살표함수 (익명 매개변수 리턴값 괄호생략)
+        // 화살표함수 (익명 매개변수 리턴값 괄호생략 리턴생략)
+        // 화살표함수 (선언 매개변수 리턴값 괄호생략 리턴생략)
+        
+        
+    </script>
+</body>
+</html>
