@@ -45,11 +45,20 @@
     height: 300px;
     border-radius: 250px;
 }
+.intro__img.small {
+    max-width: 200px;
+    border-radius: 50px;
+    height: 100px;
+}
 .intro__text {
     font-size: 1.4rem;
     padding: 5% 20% 0 20%;
     word-break: keep-all;
     font-weight: 300;
+}
+.intro__text h2 {
+    margin-bottom: 1.25rem;
+    font-size: 1.8rem;
 }
 .intro__btn {
     margin-top: 40px;
@@ -142,7 +151,26 @@
     margin: 0 auto;
     cursor: pointer;
 }
-
+.btn__style2 {
+    width: 100%;
+    display: block;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 1.2rem;
+    border-radius: 30px;
+    padding: 1rem 3.5rem;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.btn__style3 {
+    display: inline-block;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
 /* required */
 .required::after {
     content: ' *';
@@ -179,3 +207,15 @@
 .mt80  {margin-top: 80px !important;}
 .mt90  {margin-top: 90px !important;}
 .mt100 {margin-top: 100px !important;}
+
+.mr0   {margin-right: 0px !important;}
+.mr10  {margin-right: 10px !important;}
+.mr20  {margin-right: 20px !important;}
+.mr30  {margin-right: 30px !important;}
+.mr40  {margin-right: 40px !important;}
+.mr50  {margin-right: 50px !important;}
+.mr60  {margin-right: 60px !important;}
+.mr70  {margin-right: 70px !important;}
+.mr80  {margin-right: 80px !important;}
+.mr90  {margin-right: 90px !important;}
+.mr100 {margin-right: 100px !important;}
