@@ -157,47 +157,7 @@ body::after {
     box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
     margin: 10px;
 }
-.quiz__wrap > .quiz.good {
-    position: relative;
-}
-.quiz__wrap > .quiz.good::before {
-    content: '';
-    width: 100px;
-    height: 100px;
-    border: 10px solid red;
-    border-radius: 50%;
-    position: absolute;
-    left: 20px; 
-    top: 20px;
-    z-index: 100;
-}
-.quiz__wrap > .quiz.bad {
-    position: relative;
-}
-.quiz__wrap > .quiz.bad::before {
-    content: '';
-    width: 150px;
-    height: 10px;
-    background-color: red;
-    position: absolute;
-    left: 0;
-    top: 80px;
-    border-radius: 30px;
-    transform: rotate(45deg);
-    z-index: 100;
-}
-.quiz__wrap > .quiz.bad::after {
-    content: '';
-    width: 150px;
-    height: 10px;
-    background-color: red;
-    position: absolute;
-    left: 0;
-    top: 80px;
-    border-radius: 30px;
-    transform: rotate(-45deg);
-    z-index: 100;
-}
+
 .quiz__header {
     margin-bottom: 20px;
     color: #696969;
@@ -375,9 +335,7 @@ body::after {
     line-height: 1.5;
     color: #666;
 }
-.quiz__answer::before {
-    content:  "★:";
-}
+
 .quiz__desc {
     border: 1px solid #eaeaea;
     padding: 20px;
@@ -889,6 +847,19 @@ body::after {
     color: #6d89d4;
 }
 
+/* 숙젱 */
+.quiz__score {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    width: 70px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #6d89d4;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+}
 
 @media (max-width: 1200px){
     .cbt__quiz {
