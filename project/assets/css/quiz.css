@@ -1,0 +1,63 @@
+
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HSSaemaul-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSSaemaul-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+#quiz {}
+.quiz__wrap {
+    justify-content: center;
+    align-items: center;
+}
+.quiz__title {
+    height: 10%;
+    display: block ;
+    text-align: center;
+    color: #fff;
+    font-family: HSSaemaul-Regular;
+    font-size: 5vw;
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+}
+.quiz__question {
+    height: 10%;
+    display: block;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: omyu_pretty;
+    font-size: 4vw;
+    border-bottom: 1px dashed #fff;
+}
+.quiz__choices {
+}
+.quiz__choices > div {
+}
+.choice {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.choice label {
+    width: 46%;
+    margin: 2%;
+}
+.choice label img {
+    width: 100%;
+    border-radius: 10px;
+}
+.feedback__image {}
+.left {}
+.medal__text {}
+.medal__img {}
+.right {}
+.timer__img {}
+.timer__num {}
