@@ -62,9 +62,12 @@
                     <li><a href="#sample19">19. 객체 : 데이터 저장(키와값) : 표현방법8 : 객체 + 함수가 있는 방식</a></li>
                     <li><a href="#sample20">20. 객체 : 데이터 저장(키와값) : 표현방법9 : 객체 구조 분해 할당</a></li>
                     <li><a href="#sample21">21. 객체 : 데이터 저장(키와값) : 표현방법10 : 객체 펼침연산자</a></li>
-                    <li><a href="#sample22">++ 연산자(산술/대입/증감/비교/논리/비트)</a></li>
-                    <li><a href="#sample23">++ 지역변수/전역변수</a></li>
-                    <li><a href="#sample24">++ 자료형(숫자/문자열/논리/null/undefined/Object/Array/Function)</a></li>
+                    <li><a href="#sample21">22. json</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">++ 연산자(산술/대입/증감/비교/논리/비트)</a></li>
+                    <li><a href="#">++ 지역변수/전역변수</a></li>
+                    <li><a href="#">++ 자료형(숫자/문자열/논리/null/undefined/Object/Array/Function)</a></li>
                 </ul>
             </div>
             <div class="main__sample">
@@ -1061,5 +1064,21 @@ jquery
     </div>
     <script src="../assets/js/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
+    <script>
+        //22
+        //json 데이터를 객체로 변환
+        const jsonString = '{"name": "webs","age": "30"}';
+        const jsonObject = JSON.parse(jsonString);
+        console.log(jsonObject.name);
+
+        //webs
+
+        //객체를 json 데이터로 변환
+        const person = {name: webs,age: 30};
+        const jsonPerson = JSON.stringify(person);
+        console.log(jsonObject);
+        
+        // '{"name": "webs","age": "30"}'
+    </script>
 </body>
 </html>

@@ -65,6 +65,8 @@
                     <li><a href="#sample19">19. 객체 : 데이터 불러오기 : for in </a></li>
                     <li><a href="#sample20">20. 객체 : 데이터 불러오기 : 객체 펼침 연산자 </a></li>
                     <li><a href="#sample21">21. 객체 : 데이터 불러오기 : 객체 구조 분해 할당</a></li>
+                    <li><a href="#sample22">22. 파일 : 서버 데이터 불러오기 : XMLHttpRequest</a></li>
+                    <li><a href="#sample23">23. 파일 : 서버 데이터 불러오기 : fetch API</a></li>
                 </ul>
             </div>
             <!-- // main__menu -->
@@ -1067,7 +1069,7 @@ obj3 객체를 생성하고 중첩된 객체도 가지는데, 이를 객체 분�
                         </details>
                     </div>  
                 </div>
-                <!-- //sample20 -->
+                <!-- //sample21 -->
             </div>
         </main>
         <!--//main -->
@@ -1082,61 +1084,35 @@ obj3 객체를 생성하고 중첩된 객체도 가지는데, 이를 객체 분�
     <script src="../assets/js/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
     <script>
-        // 01. 변수 : 데이터 불러오기
-        // 02. 상수 : 데이터 불러오기
-        // 03. 배열 : 데이터 불러오기
-        // 04. 배열 : 데이터 갯수 불러오기
-        // 05. 배열 : 데이터 불러오기 : for()
+        // //22
+        // var xhr = new XMLHttpRequest();
+        // xhr.open("GET", "https://webstoryboy.github.io/webs2024/json/gineungsaJC2011_05.json", true);
+        
+        // xhr.onreadystatechange = function () {
+        //         if (xhr.readyState === 4 && xhr.status === 200) {
+        //                 var responseData = xhr.responseText;
+        //                 var jsonData = JSON.parse(responseData);
+    
+        //                 console.log(jsonData);
+        //         } else if (xhr.readyState === 4) {
+        //                 console.error("데이터 불러오기 오류: " + xhr.status);
+        //         }
+        // };
+        
+        // xhr.send();
+        //23
         {
-            const arr = [100, 200, 300, 400, 500, 600, 700, 800, 900];
-            
-            for(let i=0; i<10; i++){
-                console.log(arr[i])
-            };
+            fetch("https://webstoryboy.github.io/webs2024/json/gineungsaJC2011_05.json")
+                .then(response => {
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data);
+                })
+                .catch(error=> {
+                    console.log(error)
+                })
         }
-        // 06. 배열 : 데이터 불러오기 : forEach()
-        {
-            const arr = [100, 200, 300, 400, 500, 600, 700, 800, 900];
-
-            arr.forEach((el) => {
-                console.log(el);
-            });
-        }
-        // 07. 배열 : 데이터 불러오기 : for of
-        {
-            const arr = [100, 200, 300, 400, 500, 600, 700, 800, 900];
-
-            for(let el of arr){
-                console.log(el);
-            };
-        }
-        // 08. 배열 : 데이터 불러오기 : for in
-        {
-            const arr = [100, 200, 300, 400, 500, 600, 700, 800, 900];
-
-            for(let el in arr){
-                console.log(arr[el]);
-            };
-        }
-        // 09. 배열 : 데이터 불러오기 : map()
-        {
-            const arr = [100, 200, 300, 400, 500, 600, 700, 800, 900];
-
-            arr.map((el) => {
-                console.log(el)
-            });
-        }
-        // 10. 배열 : 데이터 불러오기 : filter()
-        {
-            const arr = [100, 200, 300, 400, 500, 600, 700, 800, 900];
-
-            arr.filter((el) => {
-                console.log(el);
-            });
-        }
-        // 11. 배열 : 데이터 불러오기 : 배열 펼침 연산자
-        // 12. 배열 : 데이터 불러오기 : 배열 구조 분해 할당
-        // 
     </script>
 </body>
 </html>

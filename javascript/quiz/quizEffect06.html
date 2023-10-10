@@ -8,26 +8,12 @@
 
     <link rel="stylesheet" href="assets/css/quiz.css">
     <style>
-
     </style>
 </head>
 
 <body>
     <header id="header">
-        <h1>
-            <a href="../index.html">Quiz</a>
-        </h1>
-        <nav>
-            <ul>
-                <li><a href="quizEffect01.html">1</a></li>
-                <li><a href="quizEffect02.html">2</a></li>
-                <li><a href="quizEffect03.html">3</a></li>
-                <li><a href="quizEffect04.html">4</a></li>
-                <li><a href="quizEffect05.html">5</a></li>
-                <li class="active"><a href="quizEffect06.html">6</a></li>
-                <li><a href="quizEffect07.html">7</a></li>
-            </ul>
-        </nav>
+        <!-- 헤더 내용 -->
     </header>
     <!-- //header -->
 
@@ -61,21 +47,13 @@
                             infoQuestion: item.question,
                             infoDesc: item.desc,
                             infoAnswer: item.correct_answer,
-                        }
-                        // 보기 가져오기
-                        const choices = [...item.incorrect_answers, item.correct_answer];
-
+                            // 보기 가져오기
+                            infoChoice: [...item.incorrect_answers, item.correct_answer]
+                        };
                         return formattedQuiz;
                     });
-                    console.log(items)
-
-                })
-            updataQuiz();
-        }
-
-        // 시간
-        const timer = () => {
-
+                    updataQuiz();
+                });
         }
 
         // 문제 출력
@@ -83,58 +61,59 @@
             const quizArray = [];
 
             quizInfo.forEach((quiz, number) => {
+                // 보기 랜덤 섞기
+                const choices = [...quiz.infoChoice];
+                for (let i = choices.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [choices[i], choices[j]] = [choices[j], choices[i]];
+                }
+
                 quizArray.push(`
                 <div class="quiz">
-                    <div class="quiz__header">${quiz.InfoDate} ${quiz.infoType}</div>
+                    <div class="quiz__header">${quiz.infoDate} ${quiz.infoType}</div>
                     <div class="quiz__main">
                         <div class="quiz__question">${number + 1}. ${quiz.infoQuestion}</div>
-                        // <div class="quiz__choice">
-                        //     <label for="choice1">
-                        //     <input type="radio" id="choice1" name="choice" value="1">
-                        //     <span>${quiz.infoChoice[0]}</span>
-                        //     </label>
-                        //     <label for="choice2">
-                        //     <input type="radio" id="choice2" name="choice" value="2">
-                        //     <span>${quiz.infoChoice[1]}</span>
-                        //     </label>
-                        //     <label for="choice3">
-                        //     <input type="radio" id="choice3" name="choice" value="3">
-                        //     <span>${quiz.infoChoice[2]}</span>
-                        //     </label>
-                        //     <label for="choice4">
-                        //     <input type="radio" id="choice4" name="choice" value="4">
-                        //     <span>${quiz.infoChoice[3]}</span>
-                        //     </label>
-                        // </div>
-                        <div class="quiz__answer">${quiz.answer}</div>
+                        <div class="quiz__choice">
+                            ${choices.map((choice, index) => `
+                                <label for="choice${index}">
+                                    <input type="radio" id="choice${index}" name="choice" value="${index}">
+                                    <span>${choice}</span>
+                                </label>
+                            `).join('')}
+                        </div>
+                        <div class="quiz__answer">${quiz.infoAnswer}</div>
                         <div class="quiz__desc">${quiz.infoDesc}</div>
                     </div>
                 </div>
-            `)
+            `);
             })
 
-            quizWrap.innerHTML = quizArray.join("")
-        }
-
-        // 보기 가져오기
-        const choices = [...item.incorrect_answers, item.correct_answer];
-
-        // 보기 랜덤 섞기
-        for (let i = choices.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [choices[i], choices[j]] = [choices[j], choices[i]];
+            quizWrap.innerHTML = quizArray.join("");
         }
 
         // 정답 확인
         quizCheck.addEventListener("click", () => {
-            alert("정답을 확인하시겠습니까?");
-        })
+            const radioButtons = document.querySelectorAll('input[type="radio"]:checked');
+            let userAnswers = [];
+
+            radioButtons.forEach(radio => {
+                userAnswers.push(radio.value);
+            });
+
+            quizInfo.forEach((quiz, index) => {
+                const correctIndex = quiz.infoChoice.indexOf(quiz.infoAnswer.toString());
+                if (userAnswers[index] === correctIndex.toString()) {
+                    alert(`문제 ${index + 1} 정답입니다.`);
+                } else {
+                    alert(`문제 ${index + 1} 틀렸습니다.`);
+                }
+            });
+        });
 
         // 페이지가 로드된 후 실행
         document.addEventListener("DOMContentLoaded", () => {
             fetchQuiz();
-        })
-
+        });
     </script>
 </body>
 
