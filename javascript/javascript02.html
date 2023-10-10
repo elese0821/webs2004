@@ -74,16 +74,16 @@
                 <div id="sample01" class="sample">
                     <h3>01. 변수 : 데이터 불러오기</h3>
                     <p>변수를 불러오는 예제입니다.</p>
-<pre><code class="language-js">{
+                    <pre><code class="language-js">{
         let x = 100, y = 200, z = "javascript";
 
         console.log(x, y, z)
 }
 </code></pre>
                     <p class="desc">x 변수에는 100이라는 숫자가 할당됩니다.<br>
-                    y 변수에는 200이라는 숫자가 할당됩니다.<br>
-                    z 변수에는 "javascript"라는 문자열이 할당됩니다.<br>
-                    그런 다음, console.log(x, y, z)를 호출하여 x, y, z의 값을 콘솔에 출력합니다.
+                        y 변수에는 200이라는 숫자가 할당됩니다.<br>
+                        z 변수에는 "javascript"라는 문자열이 할당됩니다.<br>
+                        그런 다음, console.log(x, y, z)를 호출하여 x, y, z의 값을 콘솔에 출력합니다.
                     </p>
                     <div class="result">
                         <details>
@@ -91,7 +91,7 @@
                                 결과 확인하기
                             </summary>
                             <div>
-                            100 200 javascript
+                                100 200 javascript
                             </div>
                         </details>
                     </div>
@@ -100,7 +100,7 @@
                 <div id="sample02" class="sample">
                     <h3>02. 상수 : 데이터 불러오기</h3>
                     <p>상수 변수를 불러오는 예제입니다.</p>
-<pre><code class="language-js">{
+                    <pre><code class="language-js">{
         const x = 100, y = 200, z = "javascript";
 
         console.log(x, y, z)
@@ -127,7 +127,7 @@
                 <div id="sample03" class="sample">
                     <h3>03. 배열 : 데이터 불러오기</h3>
                     <p>배열 데이터를 불러오는 예제입니다.</p>
-<pre><code class="language-js">{
+                    <pre><code class="language-js">{
         const arr = [100, 200, "javascript"];
 
         console.log(arr[0], arr[1], arr[2])
@@ -140,14 +140,15 @@
                         인덱스 1에는 숫자 200이 저장됩니다.<br>
                         인덱스 2에는 문자열 "javascript"가 저장됩니다.<br>
                         console.log() 함수를 사용하여 배열 arr의 각 요소를 개별적으로 콘솔에 출력합니다.<br>
-                        각 요소는 배열의 인덱스를 통해 접근합니다. 따라서 arr[0]은 배열의 첫 번째 요소를 나타내며, arr[1]은 두 번째 요소를 나타내고, arr[2]는 세 번째 요소를 나타냅니다.</p>
+                        각 요소는 배열의 인덱스를 통해 접근합니다. 따라서 arr[0]은 배열의 첫 번째 요소를 나타내며, arr[1]은 두 번째 요소를 나타내고, arr[2]는 세 번째 요소를
+                        나타냅니다.</p>
                     <div class="result">
                         <details>
                             <summary>
-                            결과 확인하기
+                                결과 확인하기
                             </summary>
                             <div>
-                            100 200 javascript
+                                100 200 javascript
                             </div>
                         </details>
                     </div>
@@ -156,7 +157,7 @@
                 <div id="sample04" class="sample">
                     <h3>04. 배열 :데이터 갯수 불러오기</h3>
                     <p>배열 데이터의 갯수를 불러오는 예제입니다.</p>
-<pre><code class="language-js">{
+                    <pre><code class="language-js">{
         const arr = [100, 200, "javascript"];
 
         console.log(arr.length);
@@ -169,7 +170,7 @@
                         인덱스 1에는 숫자 200이 저장됩니다.<br>
                         인덱스 2에는 문자열 "javascript"가 저장됩니다.<br>
                         arr.length 표현식을 사용하여 배열 arr의 길이(요소의 개수)를 가져옵니다. length는 배열의 속성(property)으로, 배열 내 요소의 개수를 나타냅니다.
-                        
+
                         console.log(arr.length);를 사용하여 배열 arr의 길이(arr.length)를 콘솔에 출력합니다.
                     </p>
                     <div class="result">
@@ -187,7 +188,7 @@
                 <div id="sample05" class="sample">
                     <h3>05. 배열 : 데이터 불러오기 : for()</h3>
                     <p>for()문을 사용하여 데이터를 불러오는 예제입니다.</p>
-<pre><code class="language-js">{
+                    <pre><code class="language-js">{
         const arr = [100, 200, 300, 400, 500, 600, 700, 800, 900];
 
         for (let i = 0; i &lt; 9; i++) {
@@ -231,7 +232,7 @@
                 <div id="sample06" class="sample">
                     <h3>06. 배열 : 데이터 불러오기 : for Each()</h3>
                     <p>forEach()메서드를 사용하여 배열 요소를 출력하는 다양한 방법을 보여주는 예제입니다.</p>
-<pre><code class="language-js">{
+                    <pre><code class="language-js">{
         const arr = [100, 200, 300, 400, 500, 600, 700, 800, 900];
 
         arr.forEach(function (element) {
@@ -260,22 +261,25 @@
 </code></pre>
                     <p class="desc">
                         forEach 반복문은 배열의 각 요소에 대해 주어진 함수를 실행합니다.<br> 반환값이 없으며, 주로 배열 요소를 반복하면서 작업을 수행할 때 사용됩니다.<br>
-    
+
                         각각의 코드 블록에 대한 설명은 다음과 같습니다:<br>
-                        arr.forEach(function (element) { ... }): 배열 arr의 forEach() 메서드를 사용하여 각 요소를 반복하고, 콜백 함수를 통해 요소를 출력합니다.
+                        arr.forEach(function (element) { ... }): 배열 arr의 forEach() 메서드를 사용하여 각 요소를 반복하고, 콜백 함수를 통해 요소를
+                        출력합니다.
                         이 콜백 함수는 요소 하나를 매개변수 element로 받습니다. 이 코드 블록은 배열의 요소들을 순회하면서 각 요소를 출력합니다.
                         <br>
-                        arr.forEach(function (element, index) { ... }): forEach() 메서드를 사용하여 요소뿐만 아니라 요소의 인덱스도 출력합니다. 콜백 함수의 두 번째 매개변수 index를 사용하여 요소의 인덱스를 출력합니다.
+                        arr.forEach(function (element, index) { ... }): forEach() 메서드를 사용하여 요소뿐만 아니라 요소의 인덱스도 출력합니다. 콜백
+                        함수의 두 번째 매개변수 index를 사용하여 요소의 인덱스를 출력합니다.
                         <br>
-                        arr.forEach(function (element, index, array) { ... }): forEach() 메서드를 사용하여 요소, 인덱스, 그리고 배열 자체에 접근할 수 있습니다. 이 코드에서는 배열 자체인 array를 출력합니다.
+                        arr.forEach(function (element, index, array) { ... }): forEach() 메서드를 사용하여 요소, 인덱스, 그리고 배열 자체에
+                        접근할 수 있습니다. 이 코드에서는 배열 자체인 array를 출력합니다.
                         <br>
-                        arr.forEach((element) => { ... }): 화살표 함수를 사용하여 forEach() 메서드를 호출합니다. 
+                        arr.forEach((element) => { ... }): 화살표 함수를 사용하여 forEach() 메서드를 호출합니다.
                         <br>
                         arr.forEach(element => { ... }): 화살표 함수를 사용하여 코드를 더 간결하게 표현합니다.
                         <br>
                         arr.forEach(el => console.log(el)): 변수 이름을 간단하게 el로 줄여서 표현합니다.<br>
                     </p>
-                        <div class="result">
+                    <div class="result">
                         <details>
                             <summary>
                                 결과 확인하기
@@ -298,7 +302,7 @@
                 <div id="sample07" class="sample">
                     <h3>07. 배열 : 데이터 불러오기 : for of </h3>
                     <p>for...of 루프를 사용하여 배열의 요소를 반복하고 각 요소를 출력하는 예제입니다.</p>
-<pre><code class="language-js">{
+                    <pre><code class="language-js">{
         const arr = [100, 200, 300, 400, 500, 600, 700, 800, 900];
 
         for (const element of arr) {
@@ -311,7 +315,7 @@
                         <br>
                         이 배열에는 9개의 요소가 포함되어 있습니다.
                         <br>
-                        for...of 루프를 사용하여 배열 arr의 각 요소를 반복합니다. 
+                        for...of 루프를 사용하여 배열 arr의 각 요소를 반복합니다.
                         <br>
                         이 루프는 배열의 요소를 하나씩 가져오며, 반복할 때마다 현재 요소를 element라는 변수에 저장합니다.
                         <br>
@@ -342,7 +346,7 @@
                 <div id="sample08" class="sample">
                     <h3>08. 배열 : 데이터 불러오기 : for in </h3>
                     <p>for...in 루프로 배열을 반복하여 요소를 출력하는 방법을 보여주는 예제입니다. </p>
-<pre><code class="language-js">{
+                    <pre><code class="language-js">{
         const arr = [100, 200, 300, 400, 500, 600, 700, 800, 900];
 
         for (let element in arr) {
@@ -399,16 +403,16 @@
                                 600<br>
                                 700<br>
                                 800<br>
-                                900 
+                                900
                             </div>
                         </details>
-                    </div>  
+                    </div>
                 </div>
                 <!-- //sample08 -->
                 <div id="sample09" class="sample">
                     <h3>09. 배열 : 데이터 불러오기 : map()</h3>
                     <p>map 메서드는 배열의 각 요소에 대해 주어진 함수를 호출하고 그 결과로 새로운 배열을 생성합니다. 원본 배열은 변경되지 않습니다.</p>
-<pre><code class="language-js">{
+                    <pre><code class="language-js">{
         const arr = [100, 200, "javascript"];
 
         arr.map(function(el, index, array){
@@ -428,7 +432,8 @@
                         주어진 함수는 요소 el, 인덱스 index, 그리고 배열 자체 array를 인수로 받습니다.<br>
                         이 함수는 각 요소의 값을 로그에 출력합니다. 예를 들어, 첫 번째 호출에서는 "09 : 100 : 0 : 100,200,javascript"를 출력할 것입니다.<br>
                         3.이 부분은 배열 arr을 다시 map 메서드를 사용하여 새로운 배열 arrNum에 복제하는 역할을 합니다. 화살표 함수를 사용하여 요소를 그대로 반환합니다.<br>
-                        4.배열 arrNum을 로그에 출력합니다. 이 배열은 [100, 200, "javascript"]와 같은 값을 가지고 있으므로 로그에는 "09 : 100,200,javascript"이 출력됩니다.
+                        4.배열 arrNum을 로그에 출력합니다. 이 배열은 [100, 200, "javascript"]와 같은 값을 가지고 있으므로 로그에는 "09 :
+                        100,200,javascript"이 출력됩니다.
                     </p>
                     <div class="result">
                         <details>
@@ -437,29 +442,29 @@
                             </summary>
                             <div>
                                 <script>
-                                {
-                                    const arr = [100, 200, "javascript"];
-                                
-                                    // arr.map(function(el, index, array){
-                                    //     // console.log("09 : " + el + " : " + index + " : " + array);
-                                    // });
-                                
-                                    const arrNum = arr.map((el) => {
-                                        return el;
-                                    });
-                                
-                                    document.write("09 : " + arrNum)
-                                }
+                                    {
+                                        const arr = [100, 200, "javascript"];
+
+                                        // arr.map(function(el, index, array){
+                                        //     // console.log("09 : " + el + " : " + index + " : " + array);
+                                        // });
+
+                                        const arrNum = arr.map((el) => {
+                                            return el;
+                                        });
+
+                                        document.write("09 : " + arrNum)
+                                    }
                                 </script>
                             </div>
                         </details>
-                    </div>  
+                    </div>
                 </div>
                 <!-- //sample09 -->
                 <div id="sample10" class="sample">
                     <h3>10. 배열 : 데이터 불러오기 : filter()</h3>
                     <p>filter 메서드는 주어진 함수의 조건을 만족하는 배열의 모든 요소를 추출하여 새로운 배열을 반환합니다.</p>
-<pre><code class="language-js">{
+                    <pre><code class="language-js">{
         const arr = [100, 200, "javascript"];
 
         arr.filter(function(el, index, array){
@@ -483,14 +488,17 @@
 </code></pre>
                     <p class="desc">
                         1. 배열 arr을 선언하고 초기값으로 [100, 200, "javascript"]를 할당합니다.<br>
-                        2. 배열 arr에 대해 filter 메서드를 호출합니다. filter 메서드는 배열의 각 요소에 대해 주어진 함수를 호출하고 그 결과로 조건을 충족하는 새로운 배열을 생성합니다.<br>
+                        2. 배열 arr에 대해 filter 메서드를 호출합니다. filter 메서드는 배열의 각 요소에 대해 주어진 함수를 호출하고 그 결과로 조건을 충족하는 새로운 배열을
+                        생성합니다.<br>
                         주어진 함수는 요소 el, 인덱스 index, 그리고 배열 자체 array를 인수로 받습니다.<br>
-                        이 함수는 각 요소의 값을 로그에 출력합니다. 그러나 주의해야 할 점은 filter 메서드는 새로운 배열을 생성하며, 원본 배열은 변경되지 않습니다. 따라서 이 코드에서는 filter 메서드를 사용해도 원본 배열 arr은 그대로입니다.<br>
+                        이 함수는 각 요소의 값을 로그에 출력합니다. 그러나 주의해야 할 점은 filter 메서드는 새로운 배열을 생성하며, 원본 배열은 변경되지 않습니다. 따라서 이 코드에서는
+                        filter 메서드를 사용해도 원본 배열 arr은 그대로입니다.<br>
                         3. filter 메서드를 사용하여 배열 arr에서 조건을 충족하는 요소를 추출하여 새로운 배열 arrNum에 저장합니다.<br>
                         조건은 각 요소 el이 150보다 큰 경우를 확인하는 것입니다<br>
                         4. 이 코드는 화살표 함수를 사용하여 동일한 작업을 수행합니다. 요소 el이 150보다 큰 경우를 확인하는 조건을 가지고 있습니다.<br>
                         5. 이 코드는 화살표 함수를 더 축약하여 사용합니다. 조건을 간단히 표현한 것으로, 요소 el이 150보다 큰 경우에만 참으로 간주됩니다.<br>
-                        6. 이 줄은 새로운 배열 arrNum을 document.write를 통해 화면에 출력하려는 시도입니다. 그러나 document.write에 배열을 전달하면 배열의 문자열 표현이 출력됩니다.<br>
+                        6. 이 줄은 새로운 배열 arrNum을 document.write를 통해 화면에 출력하려는 시도입니다. 그러나 document.write에 배열을 전달하면 배열의 문자열
+                        표현이 출력됩니다.<br>
                         7. 이 줄은 두 번째 새로운 배열 arrNum2를 document.write를 통해 화면에 출력하려는 시도입니다.<br>
                         8. 이 줄은 세 번째 새로운 배열 arrNum3을 document.write를 통해 화면에 출력하려는 시도입니다.<br>
                     </p>
@@ -501,37 +509,37 @@
                             </summary>
                             <div>
                                 <script>
-                                {
-            const arr = [100, 200, "javascript"];
+                                    {
+                                        const arr = [100, 200, "javascript"];
 
-            // arr.filter(function(el, index, array){
-            //     console.log("10 : " + el + " : " + index + " : " + array);
-            // });
+                                        // arr.filter(function(el, index, array){
+                                        //     console.log("10 : " + el + " : " + index + " : " + array);
+                                        // });
 
-            const arrNum = arr.filter((el) => {
-                return el > 150;
-            });
+                                        const arrNum = arr.filter((el) => {
+                                            return el > 150;
+                                        });
 
-            const arrNum2 = arr.filter(el => {
-                return el > 150;
-            }); 
+                                        const arrNum2 = arr.filter(el => {
+                                            return el > 150;
+                                        });
 
-            const arrNum3 = arr.filter(el =>  el > 150)
+                                        const arrNum3 = arr.filter(el => el > 150)
 
-            document.write(arrNum);
-            document.write(arrNum2);
-            document.write(arrNum3);
-        }
+                                        document.write(arrNum);
+                                        document.write(arrNum2);
+                                        document.write(arrNum3);
+                                    }
                                 </script>
                             </div>
                         </details>
-                    </div>  
+                    </div>
                 </div>
                 <!-- //sample10 -->
                 <div id="sample11" class="sample">
                     <h3>11. 배열 : 데이터 불러오기 : 배열 펼침 연산자</h3>
                     <p>배열 펼침 연산자 (...)를 사용하여 배열을 확장하고 함수 호출 시 인수를 전달하는 예제입니다. </p>
-<pre><code class="language-js">{
+                    <pre><code class="language-js">{
         // 배열 펼침 연산
         const arr1 = [100, 200, 300];
         const arr2 = [400, 500, 600];
@@ -558,9 +566,12 @@
                         3. 배열 arr1을 출력합니다.<br>
                         4. 배열 arr1을 펼침 연산자(...)를 사용하여 출력합니다. 펼침 연산자를 사용하면 배열의 각 요소가 개별적으로 출력됩니다.
                         <br>
-                        5. 이 줄에서는 + 연산자를 사용하여 두 배열 arr1과 arr2를 연결하려고 시도하고 있습니다. 그러나 이렇게 하면 문자열로 처리되어 배열 요소가 이어붙여진 문자열이 됩니다.<br>
-                        6. 배열 arr1을 펼침 연산자를 사용하여 출력하고, 그 뒤에 숫자 400을 추가하여 출력합니다. 이렇게 하면 배열 arr1의 복사본을 만들고 거기에 400이 추가된 것과 같은 결과를 얻습니다.<br>
-                        7. 배열 arr1을 slice 메서드를 사용하여 첫 번째부터 두 번째 요소까지만 선택한 후, 펼침 연산자를 사용하여 출력합니다. 이로써 배열의 일부분만 선택되어 출력됩니다.<br>
+                        5. 이 줄에서는 + 연산자를 사용하여 두 배열 arr1과 arr2를 연결하려고 시도하고 있습니다. 그러나 이렇게 하면 문자열로 처리되어 배열 요소가 이어붙여진 문자열이
+                        됩니다.<br>
+                        6. 배열 arr1을 펼침 연산자를 사용하여 출력하고, 그 뒤에 숫자 400을 추가하여 출력합니다. 이렇게 하면 배열 arr1의 복사본을 만들고 거기에 400이 추가된 것과
+                        같은 결과를 얻습니다.<br>
+                        7. 배열 arr1을 slice 메서드를 사용하여 첫 번째부터 두 번째 요소까지만 선택한 후, 펼침 연산자를 사용하여 출력합니다. 이로써 배열의 일부분만 선택되어
+                        출력됩니다.<br>
                         8. addNum이라는 함수를 정의하고, 세 개의 매개변수 a, b, c를 받아서 그들의 합을 반환합니다.<br>
                         9. 배열 num을 선언하고 [100, 200, 300]으로 초기화합니다.<br>
                         10. 함수 addNum을 호출하고 배열 num의 요소를 펼침 연산자를 사용하여 함수에 전달합니다. 이렇게 하면 배열의 요소가 함수의 각 매개변수에 전달됩니다.<br>
@@ -574,36 +585,36 @@
                             </summary>
                             <div>
                                 <script>
-                                {
-        // 배열 펼침 연산
-        const arr1 = [100, 200, 300];
-        const arr2 = [400, 500, 600];
+                                    {
+                                        // 배열 펼침 연산
+                                        const arr1 = [100, 200, 300];
+                                        const arr2 = [400, 500, 600];
 
-        // console.log(arr1) //100, 200, 300
-        // console.log(...arr1) //100, 200, 300
-        // console.log(arr1 + arr2) //100,200, 300400,500, 600 --&lt; concat()
-        // console.log(...arr1 ,400); //100, 200, 300, 400 --&lt; push()
-        // console.log(...arr1.slice(0,2)); //100 200 --&lt; slice()
+                                        // console.log(arr1) //100, 200, 300
+                                        // console.log(...arr1) //100, 200, 300
+                                        // console.log(arr1 + arr2) //100,200, 300400,500, 600 --&lt; concat()
+                                        // console.log(...arr1 ,400); //100, 200, 300, 400 --&lt; push()
+                                        // console.log(...arr1.slice(0,2)); //100 200 --&lt; slice()
 
-        // 함수 호출시 인수 전달
-        function addNum(a, b, c){
-            return a+b+c;
-        }
+                                        // 함수 호출시 인수 전달
+                                        function addNum(a, b, c) {
+                                            return a + b + c;
+                                        }
 
-        const num = [100, 200, 300];
-        const sum = addNum(...num);
-        document.write(sum)
-}
+                                        const num = [100, 200, 300];
+                                        const sum = addNum(...num);
+                                        document.write(sum)
+                                    }
                                 </script>
                             </div>
                         </details>
-                    </div>  
+                    </div>
                 </div>
                 <!-- //sample11 -->
                 <div id="sample12" class="sample">
                     <h3>12. 배열 : 데이터 불러오기 : 배열 구조 분해 할당</h3>
                     <p>배열 구조 분해 할당을 사용하는 예제입니다.</p>
-<pre><code class="language-js">{
+                    <pre><code class="language-js">{
         // 단일 배열에서 구조 분해 할당
         const [a, b, c] = [100, 200, 300, 400];
 
@@ -635,7 +646,7 @@
                         2.배열 구조 분해 할당을 사용하여 배열 arr의 요소를 변수 x, y, z에 각각 할당합니다.
                         <br>
                         3.배열 구조 분해 할당을 사용하여 배열 num의 첫 번째 요소를 변수 num1, 두 번째 요소를 변수 num2에 할당하고 나머지 요소를 배열 rest에 할당합니다.
-                        
+
                         num1에는 100, num2에는 200이 할당됩니다.<br>
                         rest에는 [300, 400, 500] 배열이 할당됩니다.<br>
                     </p>
@@ -646,41 +657,41 @@
                             </summary>
                             <div>
                                 <script>
-                                {
-        // 단일 배열에서 구조 분해 할당
-        const [a, b, c] = [100, 200, 300, 400];
+                                    {
+                                        // 단일 배열에서 구조 분해 할당
+                                        const [a, b, c] = [100, 200, 300, 400];
 
-        document.write(a + "<br>");
-        document.write(b + "<br>");
-        document.write(c + "<br>");
+                                        document.write(a + "<br>");
+                                        document.write(b + "<br>");
+                                        document.write(c + "<br>");
 
-        // 기존 배열에서 구조 분해 할당
-        const arr = [100, 200, 300];
-        const [x, y, z] = arr;
+                                        // 기존 배열에서 구조 분해 할당
+                                        const arr = [100, 200, 300];
+                                        const [x, y, z] = arr;
 
-        document.write(x + "<br>");
-        document.write(y + "<br>");
-        document.write(z + "<br>");
+                                        document.write(x + "<br>");
+                                        document.write(y + "<br>");
+                                        document.write(z + "<br>");
 
-        // 나머지 요소 추출 분해 할당
-        const num = [100, 200, 300, 400, 500];
-        const [num1, num2, ...rest] = num;
+                                        // 나머지 요소 추출 분해 할당
+                                        const num = [100, 200, 300, 400, 500];
+                                        const [num1, num2, ...rest] = num;
 
-        document.write(num1 + "<br>");
-        document.write(num2 + "<br>");
-        document.write(...rest + "<br>");
-        document.write(rest + "<br>");
-    }
+                                        document.write(num1 + "<br>");
+                                        document.write(num2 + "<br>");
+                                        document.write(...rest + "<br>");
+                                        document.write(rest + "<br>");
+                                    }
                                 </script>
                             </div>
                         </details>
-                    </div>  
+                    </div>
                 </div>
                 <!-- //sample12 -->
                 <div id="sample13" class="sample">
                     <h3>13. 객체 : 데이터 불러오기 </h3>
                     <p>점 표기법(dot notation)과 대괄호 표기법(bracket notation)을 사용하는 방법</p>
-<pre><code class="language-js">{
+                    <pre><code class="language-js">{
         const obj = {
             a: 100,
             b: 200,
@@ -696,9 +707,11 @@
 }
 </code></pre>
                     <p class="desc">
-                        점 표기법 (dot notation): 객체의 속성에 접근할 때 속성 이름을 점(.) 뒤에 붙여서 사용합니다. 예를 들어 obj.a는 객체 obj의 a 속성에 접근하는 것을 나타냅니다.
+                        점 표기법 (dot notation): 객체의 속성에 접근할 때 속성 이름을 점(.) 뒤에 붙여서 사용합니다. 예를 들어 obj.a는 객체 obj의 a 속성에 접근하는 것을
+                        나타냅니다.
                         <br>
-                        대괄호 표기법 (bracket notation): 객체의 속성에 접근할 때 대괄호([]) 안에 속성 이름을 문자열로 넣어서 사용합니다. 예를 들어 obj["a"]는 객체 obj의 a 속성에 접근하는 것을 나타냅니다. 이 방법을 사용하면 동적으로 속성 이름을 지정할 수 있습니다.
+                        대괄호 표기법 (bracket notation): 객체의 속성에 접근할 때 대괄호([]) 안에 속성 이름을 문자열로 넣어서 사용합니다. 예를 들어 obj["a"]는 객체
+                        obj의 a 속성에 접근하는 것을 나타냅니다. 이 방법을 사용하면 동적으로 속성 이름을 지정할 수 있습니다.
                     </p>
                     <div class="result">
                         <details>
@@ -714,13 +727,14 @@
                                 javascript
                             </div>
                         </details>
-                    </div>  
+                    </div>
                 </div>
                 <!-- //sample13 -->
                 <div id="sample14" class="sample">
                     <h3>14. 객체 : 데이터 불러오기 : Object.key() </h3>
-                    <p>JavaScript에서 사용되는 내장 함수 중 하나로, 객체의 속성 이름(key)들을 배열로 추출하는 데 사용됩니다. 이 함수는 객체의 속성 이름들을 배열로 반환하여 제공합니다.</p>
-<pre><code class="language-js">{
+                    <p>JavaScript에서 사용되는 내장 함수 중 하나로, 객체의 속성 이름(key)들을 배열로 추출하는 데 사용됩니다. 이 함수는 객체의 속성 이름들을 배열로 반환하여
+                        제공합니다.</p>
+                    <pre><code class="language-js">{
     const obj = {
         a: 100,
         b: 200,
@@ -744,13 +758,13 @@
                                 ['a', 'b', 'c']
                             </div>
                         </details>
-                    </div>  
+                    </div>
                 </div>
                 <!-- //sample14 -->
                 <div id="sample15" class="sample">
                     <h3>15. 객체 : 데이터 불러오기 : Object.values() </h3>
                     <p>JavaScript에서 사용되는 내장 함수 중 하나로, 객체의 속성 값들을 배열로 추출하는 데 사용됩니다. 이 함수는 객체의 속성 값을 배열로 변환하여 반환합니다.</p>
-<pre><code class="language-js">{
+                    <pre><code class="language-js">{
         const obj = {
             a: 100,
             b: 200,
@@ -761,7 +775,8 @@
 }
 </code></pre>
                     <p class="desc">
-                        Object.values(obj)는 객체 obj의 속성 값들을 배열로 반환합니다. 즉, 100, 200, 'javascript'이라는 값들이 배열의 원소로 저장되어 출력됩니다. 이를 통해 객체의 값들을 배열로 쉽게 접근하고 처리할 수 있습니다.
+                        Object.values(obj)는 객체 obj의 속성 값들을 배열로 반환합니다. 즉, 100, 200, 'javascript'이라는 값들이 배열의 원소로 저장되어
+                        출력됩니다. 이를 통해 객체의 값들을 배열로 쉽게 접근하고 처리할 수 있습니다.
                     </p>
                     <div class="result">
                         <details>
@@ -772,13 +787,14 @@
                                 [100, 200, 'javascript']
                             </div>
                         </details>
-                    </div>  
+                    </div>
                 </div>
                 <!-- //sample15 -->
                 <div id="sample16" class="sample">
                     <h3>16. 객체 : 데이터 불러오기 : Object.entries() </h3>
-                    <p>JavaScript에서 사용되는 내장 함수 중 하나로, 객체의 속성(key-value 쌍)을 배열로 변환하는 역할을 합니다. 이 함수는 객체의 각 속성을 [key, value] 형태의 하위 배열로 변환하고 이 하위 배열들을 모아 새로운 배열을 생성합니다.</p>
-<pre><code class="language-js">{
+                    <p>JavaScript에서 사용되는 내장 함수 중 하나로, 객체의 속성(key-value 쌍)을 배열로 변환하는 역할을 합니다. 이 함수는 객체의 각 속성을 [key,
+                        value] 형태의 하위 배열로 변환하고 이 하위 배열들을 모아 새로운 배열을 생성합니다.</p>
+                    <pre><code class="language-js">{
         const obj = {
             a: 100,
             b: 200,
@@ -789,8 +805,8 @@
 }
 </code></pre>
                     <p class="desc">
-주어진 코드에서는 객체 obj의 속성들을 Object.entries(obj)를 사용하여 배열로 변환하고, 그 결과를 콘솔에 출력하고 있습니다.<br>
- 결과로는 객체의 각 속성과 그 값이 [key, value] 형태의 하위 배열로 묶인 배열이 출력됩니다.
+                        주어진 코드에서는 객체 obj의 속성들을 Object.entries(obj)를 사용하여 배열로 변환하고, 그 결과를 콘솔에 출력하고 있습니다.<br>
+                        결과로는 객체의 각 속성과 그 값이 [key, value] 형태의 하위 배열로 묶인 배열이 출력됩니다.
                     </p>
                     <div class="result">
                         <details>
@@ -802,16 +818,17 @@
                                 ['a', 100],<br>
                                 ['b', 200],<br>
                                 ['c', 'javascript']<br>
-                            ]
+                                ]
                             </div>
                         </details>
-                    </div>  
+                    </div>
                 </div>
                 <!-- //sample16 -->
                 <div id="sample17" class="sample">
                     <h3>17. 객체 : 데이터 불러오기 : Object.assign()</h3>
-                    <p>JavaScript에서 사용되는 내장 함수 중 하나로, 객체를 병합하거나 복사하는 데 사용됩니다. 이 함수는 한 객체로부터 다른 객체로 속성을 복사하고, 필요한 경우 속성을 덮어쓸 수 있습니다.</p>
-<pre><code class="language-js">{
+                    <p>JavaScript에서 사용되는 내장 함수 중 하나로, 객체를 병합하거나 복사하는 데 사용됩니다. 이 함수는 한 객체로부터 다른 객체로 속성을 복사하고, 필요한 경우 속성을
+                        덮어쓸 수 있습니다.</p>
+                    <pre><code class="language-js">{
         const obj1 = { a: 100, b: 200, c: "javascript"};
         const obj2 = { d: 300, e: 400, f: "jqeury"};
 
@@ -821,13 +838,15 @@
 }
 </code></pre>
                     <p class="desc">
-obj1과 obj2는 각각 속성과 값을 가지고 있는 객체입니다.
-<br>
-Object.assign(obj1, obj2)를 사용하여 obj1 객체에 obj2 객체의 속성을 병합합니다. 이렇게 하면 obj1은 { a: 100, b: 200, c: "javascript", d: 300, e: 400, f: "jqeury" }와 같이 업데이트됩니다.
-<br>
-obj3 배열에 Object.assign(obj1, obj2)의 결과를 단일 요소로 포함합니다. 이것은 obj1과 obj2를 결합한 결과 객체가 배열 안에 담겨 있는 형태입니다.
-<br>
-console.log(obj3);를 사용하여 obj3 배열을 출력합니다.
+                        obj1과 obj2는 각각 속성과 값을 가지고 있는 객체입니다.
+                        <br>
+                        Object.assign(obj1, obj2)를 사용하여 obj1 객체에 obj2 객체의 속성을 병합합니다. 이렇게 하면 obj1은 { a: 100, b: 200, c:
+                        "javascript", d: 300, e: 400, f: "jqeury" }와 같이 업데이트됩니다.
+                        <br>
+                        obj3 배열에 Object.assign(obj1, obj2)의 결과를 단일 요소로 포함합니다. 이것은 obj1과 obj2를 결합한 결과 객체가 배열 안에 담겨 있는
+                        형태입니다.
+                        <br>
+                        console.log(obj3);를 사용하여 obj3 배열을 출력합니다.
                     </p>
                     <div class="result">
                         <details>
@@ -838,13 +857,13 @@ console.log(obj3);를 사용하여 obj3 배열을 출력합니다.
                                 { a: 100, b: 200, c: 'javascript', d: 300, e: 400, f: 'jqeury' }
                             </div>
                         </details>
-                    </div>  
+                    </div>
                 </div>
                 <!-- //sample17 -->
                 <div id="sample18" class="sample">
                     <h3>18. 객체 : 데이터 불러오기 : hasOwnProperty()</h3>
                     <p>객체의 속성을 확인하는 두 가지 방법을 보여주는 예제입니다.</p>
-<pre><code class="language-js">{
+                    <pre><code class="language-js">{
         const obj = {
             a: 100,
             b: 200,
@@ -864,15 +883,15 @@ console.log(obj3);를 사용하여 obj3 배열을 출력합니다.
 }
 </code></pre>
                     <p class="desc">
-hasOwnProperty 메서드:<br>
-obj.hasOwnProperty("a"): 객체 obj가 a라는 속성을 가지고 있는지 확인하고 결과를 출력합니다.<br>
-true는 해당 속성이 객체에 존재함을 나타냅니다.<br>
-false는 해당 속성이 객체에 존재하지 않음을 나타냅니다.<br>
-in 연산자:<br>
-"a" in obj: in 연산자를 사용하여 객체 obj가 a라는 속성을 가지고 있는지 확인하고 결과를 출력합니다.<br>
-역시 true는 해당 속성이 객체에 존재함을 나타냅니다.<br>
-false는 해당 속성이 객체에 존재하지 않음을 나타냅니다.<br>
-각각의 검사 방법은 속성의 존재 여부를 확인하며, 결과로 true 또는 false를 반환합니다.
+                        hasOwnProperty 메서드:<br>
+                        obj.hasOwnProperty("a"): 객체 obj가 a라는 속성을 가지고 있는지 확인하고 결과를 출력합니다.<br>
+                        true는 해당 속성이 객체에 존재함을 나타냅니다.<br>
+                        false는 해당 속성이 객체에 존재하지 않음을 나타냅니다.<br>
+                        in 연산자:<br>
+                        "a" in obj: in 연산자를 사용하여 객체 obj가 a라는 속성을 가지고 있는지 확인하고 결과를 출력합니다.<br>
+                        역시 true는 해당 속성이 객체에 존재함을 나타냅니다.<br>
+                        false는 해당 속성이 객체에 존재하지 않음을 나타냅니다.<br>
+                        각각의 검사 방법은 속성의 존재 여부를 확인하며, 결과로 true 또는 false를 반환합니다.
                     </p>
                     <div class="result">
                         <details>
@@ -890,13 +909,13 @@ false는 해당 속성이 객체에 존재하지 않음을 나타냅니다.<br>
                                 false
                             </div>
                         </details>
-                    </div>  
+                    </div>
                 </div>
                 <!-- //sample18 -->
                 <div id="sample19" class="sample">
                     <h3>19. 객체 : 데이터 불러오기 : for in </h3>
                     <p>for...in 반복문을 사용하여 객체 obj의 모든 속성과 각 속성의 값을 출력하는 예제입니다.</p>
-<pre><code class="language-js">{
+                    <pre><code class="language-js">{
         const obj = {
             a: 100,
             b: 200,
@@ -908,13 +927,13 @@ false는 해당 속성이 객체에 존재하지 않음을 나타냅니다.<br>
 }
 </code></pre>
                     <p class="desc">
-const obj = { a: 100, b: 200, c: "javascript" }: obj라는 객체를 생성하고 세 개의 속성(a, b, c)을 초기화합니다.
-<br>
-for...in 루프를 사용하여 obj 객체의 속성을 반복합니다. for (let el in obj)은 obj 객체의 속성을 하나씩 순회하는 반복문입니다.
-<br>
-반복문 내부에서 console.log(el + " : " + obj[el]);를 사용하여 현재 순회 중인 속성 이름(el)과 해당 속성의 값을 출력합니다.
-<br>
- 이것은 객체의 속성 이름과 값을 콘솔에 출력합니다.
+                        const obj = { a: 100, b: 200, c: "javascript" }: obj라는 객체를 생성하고 세 개의 속성(a, b, c)을 초기화합니다.
+                        <br>
+                        for...in 루프를 사용하여 obj 객체의 속성을 반복합니다. for (let el in obj)은 obj 객체의 속성을 하나씩 순회하는 반복문입니다.
+                        <br>
+                        반복문 내부에서 console.log(el + " : " + obj[el]);를 사용하여 현재 순회 중인 속성 이름(el)과 해당 속성의 값을 출력합니다.
+                        <br>
+                        이것은 객체의 속성 이름과 값을 콘솔에 출력합니다.
                     </p>
                     <div class="result">
                         <details>
@@ -927,13 +946,13 @@ for...in 루프를 사용하여 obj 객체의 속성을 반복합니다. for (le
                                 c : javascript
                             </div>
                         </details>
-                    </div>  
+                    </div>
                 </div>
                 <!-- //sample19 -->
                 <div id="sample20" class="sample">
                     <h3>20. 객체 : 데이터 불러오기 : 객체 펼침 연산자 </h3>
                     <p>JavaScript에서 객체펼침 연산자로 객체를 병합하고 수정하는 여러 가지 방법을 보여주는 예제입니다.</p>
-<pre><code class="language-js">{
+                    <pre><code class="language-js">{
         const obj1 = {
             a: 100,
             b: 200,
@@ -954,15 +973,15 @@ for...in 루프를 사용하여 obj 객체의 속성을 반복합니다. for (le
 }
 </code></pre>
                     <p class="desc">
-obj1과 obj2라는 두 개의 객체를 생성하고 각각 속성을 초기화합니다.
-<br>
-obj3는 obj1과 obj2의 모든 속성을 합병하여 새로운 객체를 만듭니다.
-<br>
-obj4는 obj1의 속성을 모두 포함하면서 d 속성을 "jquery"로 변경한 새로운 객체를 만듭니다.
-<br>
-obj5는 obj1의 속성을 모두 포함하면서 b 속성의 값을 300으로 변경한 새로운 객체를 만듭니다.
-<br>
-console.log를 사용하여 obj3, obj4, obj5를 출력하여 각각의 객체가 어떻게 생성되었는지를 확인합니다.
+                        obj1과 obj2라는 두 개의 객체를 생성하고 각각 속성을 초기화합니다.
+                        <br>
+                        obj3는 obj1과 obj2의 모든 속성을 합병하여 새로운 객체를 만듭니다.
+                        <br>
+                        obj4는 obj1의 속성을 모두 포함하면서 d 속성을 "jquery"로 변경한 새로운 객체를 만듭니다.
+                        <br>
+                        obj5는 obj1의 속성을 모두 포함하면서 b 속성의 값을 300으로 변경한 새로운 객체를 만듭니다.
+                        <br>
+                        console.log를 사용하여 obj3, obj4, obj5를 출력하여 각각의 객체가 어떻게 생성되었는지를 확인합니다.
                     </p>
                     <div class="result">
                         <details>
@@ -971,35 +990,35 @@ console.log를 사용하여 obj3, obj4, obj5를 출력하여 각각의 객체가
                             </summary>
                             <div>
                                 {
-                                    a: 100,
-                                    b: 200,
-                                    c: "javascript",
-                                    d: 300,
-                                    e: 400,
-                                    f: "jqeury"
+                                a: 100,
+                                b: 200,
+                                c: "javascript",
+                                d: 300,
+                                e: 400,
+                                f: "jqeury"
                                 }<br>
-                                
+
                                 {
-                                    a: 100,
-                                    b: 200,
-                                    c: "javascript",
-                                    d: "jquery"
+                                a: 100,
+                                b: 200,
+                                c: "javascript",
+                                d: "jquery"
                                 }<br>
-                                
+
                                 {
-                                    a: 100,
-                                    b: 300,
-                                    c: "javascript"
+                                a: 100,
+                                b: 300,
+                                c: "javascript"
                                 }
                             </div>
                         </details>
-                    </div>  
+                    </div>
                 </div>
                 <!-- //sample20 -->
                 <div id="sample21" class="sample">
                     <h3>21. 객체 : 데이터 불러오기 : 객체 구조 분해 할당</h3>
                     <p>객체 분해 (Object Destructuring)를 사용하는 예제를 보여줍니다. 객체 분해는 객체의 속성을 추출하여 변수에 할당하는 방법을 제공합니다. </p>
-<pre><code class="language-js">{
+                    <pre><code class="language-js">{
         const obj1 = {
             a: 100,
             b: 200,
@@ -1041,12 +1060,12 @@ console.log를 사용하여 obj3, obj4, obj5를 출력하여 각각의 객체가
 }
 </code></pre>
                     <p class="desc">
-객체 obj1을 생성하고 세 개의 속성(a, b, c)을 초기화합니다.<br>
-객체 분해를 사용하여 obj1의 속성들을 개별 변수로 추출하고 출력합니다.<br>
-속성의 키값을 변경하여 다시 객체 분해를 수행하고 출력합니다.<br>
-obj2 객체를 생성하고 g 속성에 기본값을 설정한 후, 객체 분해를 수행하여 변수에 할당하고 출력합니다.<br>
-obj3 객체를 생성하고 중첩된 객체도 가지는데, 이를 객체 분해를 사용하여 변수에 할당하고 출력합니다.<br>
-기본적으로 객체 분해를 사용하면 객체의 속성을 간편하게 개별 변수로 추출할 수 있습니다.
+                        객체 obj1을 생성하고 세 개의 속성(a, b, c)을 초기화합니다.<br>
+                        객체 분해를 사용하여 obj1의 속성들을 개별 변수로 추출하고 출력합니다.<br>
+                        속성의 키값을 변경하여 다시 객체 분해를 수행하고 출력합니다.<br>
+                        obj2 객체를 생성하고 g 속성에 기본값을 설정한 후, 객체 분해를 수행하여 변수에 할당하고 출력합니다.<br>
+                        obj3 객체를 생성하고 중첩된 객체도 가지는데, 이를 객체 분해를 사용하여 변수에 할당하고 출력합니다.<br>
+                        기본적으로 객체 분해를 사용하면 객체의 속성을 간편하게 개별 변수로 추출할 수 있습니다.
                     </p>
                     <div class="result">
                         <details>
@@ -1067,9 +1086,97 @@ obj3 객체를 생성하고 중첩된 객체도 가지는데, 이를 객체 분�
                                 javascript
                             </div>
                         </details>
-                    </div>  
+                    </div>
                 </div>
                 <!-- //sample21 -->
+                <div id="sample22" class="sample">
+                    <h3>22. 파일 : 서버 데이터 불러오기 : XMLHttpRequest</h3>
+                    <p>XMLHttpRequest 객체를 사용하여 원격 서버에서 JSON 데이터를 가져오는 예제입니다.</p>
+                    <pre><code class="language-js">{
+    // XMLHttpRequest 객체 생성
+    var xhr = new XMLHttpRequest();
+    // GET 요청을 열고 지정된 URL에서 데이터를 가져옴
+    xhr.open("GET", "https://webstoryboy.github.io/webs2024/json/gineungsaJC2011_05.json", true);
+    // 요청 상태가 변경될 때 실행되는 이벤트 핸들러 등록
+    xhr.onreadystatechange = function () {
+        // 요청이 완료되고 성공했을 때
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            // 응답 데이터를 문자열로 저장
+            var responseData = xhr.responseText;
+            // JSON 문자열을 JavaScript 객체로 파싱
+            var jsonData = JSON.parse(responseData);
+            // 파싱된 데이터를 콘솔에 출력
+            console.log(jsonData);
+        }
+        // 요청이 완료되었지만 실패했을 때
+        else if (xhr.readyState === 4) {
+            // 오류 메시지 출력
+            console.error("데이터 불러오기 오류: " + xhr.status);
+        }
+    };
+    // 요청 전송
+    xhr.send();
+}
+</code></pre>
+                    <p class="desc">
+                        XMLHttpRequest를 사용하여 비동기 방식으로 원격 서버에서 JSON 데이터를 가져오는 방법입니다.
+                    </p>
+                    <div class="result">
+                        <details>
+                            <summary>
+                                결과 확인하기
+                            </summary>
+                            <div>
+                                Array(60)
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <!-- //sample22 -->
+                <div id="sample23" class="sample">
+                    <h3>23. 파일 : 서버 데이터 불러오기 : fetch API</h3>
+                    <p>fetch 함수를 사용하여 원격 서버에서 JSON 데이터를 가져옵니다.</p>
+                    <pre><code class="language-js">{
+    // 원격 서버에서 JSON 데이터를 가져오기 위해 fetch 함수 사용
+    fetch("https://webstoryboy.github.io/webs2024/json/gineungsaJC2011_05.json")
+        .then(response => {
+            // 응답 데이터를 JSON 형식으로 파싱하고 반환
+            return response.json();
+        })
+        .then(data => {
+            // 파싱된 JSON 데이터를 콘솔에 출력
+            console.log(data);
+        })
+        .catch(error=> {
+            // 에러가 발생하면 에러 메시지를 콘솔에 출력
+            console.log(error)
+        });
+}
+</code></pre>
+                    <p class="desc">
+                        
+                        fetch 함수를 사용하여 원격 서버에서 JSON 데이터를 가져옵니다. fetch 함수는 Promise를 반환합니다.<br>
+                        .then(response => { return response.json(); })은 첫 번째 .then 블록에서 응답 객체(response)를 받아와서<br>
+                        JSON 형식으로 파싱합니다.<br>
+                        두 번째 .then 블록에서 파싱된 데이터를 출력합니다.<br>
+                        .catch(error => { console.log(error) })는 에러가 발생한 경우 에러 메시지를 콘솔에 출력합니다.<br>
+                        fetch를 사용하여 비동기 방식으로 원격 서버에서 JSON 데이터를 가져오는 방법입니다.
+                        <br>
+                        fetch를 사용하는 방법이 코드가 간결하고 모던하며 가독성이 좋으므로 더 많이 사용되고 있습니다.
+
+                    </p>
+                    <div class="result">
+                        <details>
+                            <summary>
+                                결과 확인하기
+                            </summary>
+                            <div>
+                                Array(60)
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <!-- //sample23 -->
             </div>
         </main>
         <!--//main -->
@@ -1085,21 +1192,7 @@ obj3 객체를 생성하고 중첩된 객체도 가지는데, 이를 객체 분�
     <script>hljs.highlightAll();</script>
     <script>
         // //22
-        // var xhr = new XMLHttpRequest();
-        // xhr.open("GET", "https://webstoryboy.github.io/webs2024/json/gineungsaJC2011_05.json", true);
-        
-        // xhr.onreadystatechange = function () {
-        //         if (xhr.readyState === 4 && xhr.status === 200) {
-        //                 var responseData = xhr.responseText;
-        //                 var jsonData = JSON.parse(responseData);
-    
-        //                 console.log(jsonData);
-        //         } else if (xhr.readyState === 4) {
-        //                 console.error("데이터 불러오기 오류: " + xhr.status);
-        //         }
-        // };
-        
-        // xhr.send();
+
         //23
         {
             fetch("https://webstoryboy.github.io/webs2024/json/gineungsaJC2011_05.json")
@@ -1109,10 +1202,11 @@ obj3 객체를 생성하고 중첩된 객체도 가지는데, 이를 객체 분�
                 .then(data => {
                     console.log(data);
                 })
-                .catch(error=> {
+                .catch(error => {
                     console.log(error)
                 })
         }
     </script>
 </body>
+
 </html>
