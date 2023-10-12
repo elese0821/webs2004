@@ -6,7 +6,6 @@
     <title>회원가입 페이지</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css">
     <?php include "../include/head.php" ?>
 </head>
 <body class="gray"> 
