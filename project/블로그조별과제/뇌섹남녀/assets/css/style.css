@@ -42,6 +42,7 @@ body {
 }
 .wrap2 > div > div {
     border-radius: 20px;
+    width: 300px;
     max-width: 1200px;
     margin: 0 auto;
 }
