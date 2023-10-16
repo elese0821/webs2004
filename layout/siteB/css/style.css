@@ -10,12 +10,10 @@
     margin: 0;
     padding: 0;
     color: #333;
-    font-family: "GmarketSansMedium";
 }
 a {
     text-decoration: none;
     color: #333;
-    font-family: "GmarketSansMedium";
 }
 li {
     list-style: none;
@@ -163,17 +161,17 @@ img {
 #contents .container .notice {
     width: 400px;
     height: 200px;
-    padding: 25px 20px;
+    padding: 20px 20px;
     background-color: #fff4e0;
     box-sizing: border-box;
 }
 #contents .container .notice h3 {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 #contents .container .notice li {
     display: flex;
-    line-height: 1.8;
+    line-height: 1.5;
     position: relative;
     padding-left: 14px;
 }
