@@ -1,0 +1,126 @@
+#b_write_wrap {
+    position: relative;
+}
+.write_board {
+    left: 0;
+    top: 0;
+    background: linear-gradient(45deg,#F2E2DE ,#E9F3FC );
+    min-height: 400px;
+    width: 100%;
+    position: relative;
+}
+.board_write {
+    background-color: #fff;
+    width: 90%;
+    max-width: 800px;
+    min-height: 800px;
+    margin: 0 auto;
+    transform: translateY(-25%);
+    padding: 50px;
+}
+legend {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+fieldset {
+    border: none;
+}
+#b_title {
+    font-weight: bold;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+input {
+    font-family: "nanumSquareNeo";
+}
+#boardTitle{
+    padding: 18px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 0 2px #e2e2e2;
+}
+
+#boardContents_w {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+}
+#boardContents {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #FAFAFB;
+    border: none;
+    box-shadow: 0 0 0 2px #e2e2e2;
+    max-height: 400px;
+    padding: 20px;
+}
+.board__btns {
+    margin-top: 30px;
+    position: relative;
+    display: flex;    
+    flex-direction: row-reverse;
+}
+.btn__style3 {
+    border: none;
+    font-family: "nanumSquareNeo";
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid #e0e0e0;    
+    font-weight: bold;
+    color: #333;
+    transition: background-color 0.3s;
+}
+.btn__style3:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+#boardPass_label {
+    display: block;
+    margin-top: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+#boardPass {
+    display: block;
+    padding: 18px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 0 2px #e2e2e2;
+}
+@media (max-width: 550px) {
+    .write_board {
+        min-height: 250px;
+    }
+    .board_write {
+        background-color: #fff;
+        width: 90%;
+        min-height: 300px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+    #b_title {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    #boardContents_w {
+        margin-top: 30px;
+    }
+    #boardContents {
+        max-height: 250px;
+    }
+}
+
+.red_t {
+    color: red;
+}
+

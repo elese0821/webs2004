@@ -90,6 +90,7 @@ main {
 }
 
 .search__title {
+    font-size: 1.3rem;
     margin-bottom: 20px;
 }
 
@@ -103,7 +104,6 @@ main {
     display: block;
     margin-bottom: 10px;
     color: #2f2fa1;
-    max-width: 500px ;
     border-radius: 2px;
     padding: 5px 12px; 
 }
@@ -118,7 +118,6 @@ main {
     font-family: "IBMPlexSansKR-Regular";
     letter-spacing: 1.5px;
     margin-bottom: 30px;
-    max-width: 800px;
     flex-wrap: wrap;
 }
 .search__box p {
@@ -141,6 +140,7 @@ label {
     border: none;
     padding: 10px 30px;
     font-size: 1rem;
+    min-width: 400px;
 }
 
 .search__list li.show {
@@ -148,6 +148,25 @@ label {
 }
 .search__list li.hide {
     display: none;
+}
+.search__list span {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid #49498d;
+    margin: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+}
+.search__list span:hover {
+    background-color: #49498d;
+    color: #fff;
+}
+.search__box__desc {
+    display: block;
+    width: 100%;
+    color: #2f2fa1;
 }
 
 .search__list {
@@ -159,9 +178,14 @@ label {
     padding: 30px;
     text-align-last: left;
     color: #2f2fa1;
+    min-height: 40vw;
 }
 
-
+.search__info {
+    max-width: 800px;
+    text-align: right;
+    margin: 0 auto;
+}
 .search__info > div {
     display: inline-block;
     color: #ffffff;
@@ -170,8 +194,7 @@ label {
     padding: 5px 12px; 
     font-size: 1.1rem;
 }
-.search__select {
-}
+
 .search__select span {
     line-height: 30px;
     height: 30px;
@@ -184,7 +207,7 @@ label {
     cursor: pointer;
     font-family: "KOTRA_BOLD-Bold";
     border-radius: 100%;
-
+   
 }
 .search__select span:hover {
     background-color: #2f2fa1;
@@ -193,9 +216,22 @@ label {
 
 strong {
     color: #2f2fa1;
-    font-family: "KOTRA_BOLD-Bold";
-    font-weight: normal;
+    font-family: "IBMPlexSansKR-Regular";
+    font-weight: bold;
 }
+
+.search__box__result {
+    margin-top: 50px;
+    width: 100%;
+    border-top: 1px solid #2f2fa1;
+    border-bottom: 1px solid #2f2fa1;
+    padding: 30px 0;
+    color: #2f2fa1;
+    background-color: rgba(255,255,255,.3);
+    font-weight: bold;
+}
+
+
 /* footer */
 #footer {
     height: 60px;
@@ -203,6 +239,8 @@ strong {
     justify-content: center;
     align-items: center;
     background-color: #fff;
+    position: relative;
+    bottom: 0;
 }
 
 #footer a {

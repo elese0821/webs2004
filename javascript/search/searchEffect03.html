@@ -145,7 +145,7 @@
         let count = 0;
 
         // 전체 갯수 구하기
-        searchInfo.textContent = "CSS 속성의 갯수는 " + searchList.length + "개입니다.";
+        searchInfo.textContent = "CSS 속성의 갯수는 " + searchList.length + "개 입니다.";
 
         searchSelect.forEach(el => {
             el.addEventListener("click", () => {
@@ -169,6 +169,7 @@
             });
         });
 
+        // 전체 보기 버튼
         const showAllButton = document.getElementById("showAll");
 
         showAllButton.addEventListener("click", () => {
@@ -177,7 +178,6 @@
             });
             searchInfo.textContent = "CSS 속성의 갯수는 " + searchList.length + "개입니다.";
         });
-
     </script>
 </body>
 
