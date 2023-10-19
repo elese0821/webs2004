@@ -32,18 +32,16 @@
                 <h1>CSS 속성 설명 검색하기</h1>
             </div>
             <div class="search__box">
-                <label for="searchBox">검색하기</label>
-                <input type="text" id="searchBox" name="searchBox" placeholder="CSS 속성을 검색하면 설명이 나옵니다.">
+                <div>
+                    <label for="searchBox">검색하기</label>
+                    <input type="text" id="searchBox" name="searchBox" placeholder="CSS 속성을 검색하면 설명이 나옵니다.">
+                    <button id="searchButton" type="button">검색</button>
+                </div>
                 <div class="search__box__result">
-                    animation-delay는 애니메이션의 지연 시간을 설정합니다.
+                    설명이 나오는 곳!
                 </div>
             </div>
-            <div class="search__list">
-                <div class="css">
-                    <ul>
-                    </ul>
-                </div>
-            </div>
+            <div class="search__list"></div>
         </div>
     </main>
     <!-- main -->
@@ -120,27 +118,54 @@
         ]
 
         const searchList = document.querySelector(".search__list");
-        const searchSelect = document.querySelector(".search__select span");
+        const searchInfo = document.querySelector(".search__info");
         const searchBox = document.querySelector(".search__box input");
         const searchBoxResult = document.querySelector(".search__box__result");
+        const searchButton = document.getElementById("searchButton");
 
 
+        // 출력하기 
         cssProperty.map((element, index) => {
             searchList.innerHTML += `<span>${element.name}</span>`;
         });
 
-        // 입력하기
-        // searchBox.addEventListener("keyup", () => {
-        //     const searchWord = searchBox.value;
-        //     findProperty(searchWord);
-        //     console.log(findProperty);
-        // });
+        // 검색하기 
+        function findProperty(searchKeyword) {
+            const targetData = cssProperty.find((data) => data.name === searchKeyword);
+            const listItem = searchList.querySelectorAll("span");
 
 
-        // 속성 찾기
-       
+            // active 제거
+            listItem.forEach(item => item.classList.remove("active"));
 
+            if (targetData == null) {
+                searchBoxResult.textContent = "해당 속성이 존재하지 않습니다.";
+                return
+            } else {
+                searchBoxResult.textContent = targetData.desc;
 
+                // active 추가
+                listItem.forEach((item) => {
+                    if (item.textContent === searchKeyword) {
+                        item.classList.add("active");
+                    }
+                })
+            }
+        }
+
+        // 속성 클릭하기
+        document.querySelectorAll(".search__list span").forEach(span => {
+            span.addEventListener("click", () => {
+                const keyword = span.innerText;
+                findProperty(keyword);
+            })
+        })
+
+        // 검색 버튼 클릭하기
+        searchButton.addEventListener("click", () => {
+            const keyword = searchBox.value;
+            findProperty(keyword);
+        });
     </script>
 </body>
 

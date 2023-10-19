@@ -7,7 +7,7 @@
     <title>뇌섹남녀-boardView</title>
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/boardWrite.css">
+    <link rel="stylesheet" href="../assets/css/board.css">
 </head>
 
 <body>
@@ -34,14 +34,10 @@
             <div id="b_write_wrap">
                 <div class="write_board"></div>
                 <form action="boardWriteSave.html" name="#" method="#" class="board_write">
-                    <section class="table__inner container">
+                    <section class="table__inner">
                         <div class="board__view">
                             <table>
-                                <colgroup>
-                                    <col style="width: 20%;">
-                                    <col style="width: 80%;">
-                                </colgroup>
-                                <tbody>
+                                <tbody class="tby">
                                     <tr>
                                         <th>제목</th>
                                         <td>프론트 앤드 개발자 취업 노하우</td>
@@ -60,7 +56,7 @@
                                     </tr>
                                     <tr>
                                         <th>내용</td>
-                                        <td style="text-align: left; line-height: 1.6rem;">
+                                        <td class="b_contents_style" style="text-align: left; line-height: 1.6rem;">
                                             프론트 앤드 개발자 취업 노하우
                                             프론트엔드 개발자로 취업을 준비하는 분들에게는 다음과 같은 노하우가 도움이 될 수 있습니다.
                                             기본기를 탄탄하게 다지기 HTML, CSS, JavaScript 등의 기본 기술을 제대로 이해하고 활용할 수 있어야 합니다. 특히
@@ -90,7 +86,8 @@
                     </fieldset>
                 </form>
             </div>
-            <!-- main -->
+        </main>
+        <!-- main -->
 
             <footer id="footer">
                 <div class="footerwrap">

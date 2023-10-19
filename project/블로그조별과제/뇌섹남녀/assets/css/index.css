@@ -71,7 +71,8 @@ body {
     display: block;
     width: 100%;
     padding: 20px 0;
+    transition: background-color 0.4s;
 }
-.wrap2 > div > div li:hover {
+.wrap2 > div > div li:hover a{
     background-color: #fdc5b7;
 }
