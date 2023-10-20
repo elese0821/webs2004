@@ -147,6 +147,7 @@ li.active_nav a {
         justify-content: center;
         padding: 3px;
         z-index: 1000 !important;
+        align-content: center;
     }
     .down_nav ul {
         margin: 0 auto;
