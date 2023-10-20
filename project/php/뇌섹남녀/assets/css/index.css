@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    color: #000;
-    font-family: 'pyeongChangPeace';
+    color: #283269;
+    font-family: 'GangwonEdu_OTFBoldA';
     font-weight: 400;
 }
 li {
@@ -10,8 +10,7 @@ li {
 }
 a {
     text-decoration: none;
-    color: inherit;
-    font-family: 'pyeongChangPeace';
+    font-family: 'GangwonEdu_OTFBoldA';
     font-weight: 400;
 }
 #wrap {
@@ -28,14 +27,15 @@ a {
     margin: 10px 0;
 }
 #nav li a {
-    border: 1px solid #000;
+    border: 1px solid #283269;
     display: block;
     padding: 10px;
     margin-bottom: 5px;
     transition: all 0.1s;
+    color:#283269;
 }
 #nav li a:hover {
-    background-color: #000;
+    background-color: #283269;
     color: #fff;
 }
 #nav .webd {
@@ -60,11 +60,11 @@ a {
 .menu ul li {
     display: inline-block;
     padding: 10px;
-    border: 1px solid #000;
+    border: 1px solid #283269;
     cursor: pointer;
 }
 .menu ul li.active {
-    background-color: #000;
+    background-color: #283269;
     color: #fff;
 }
 .contents > div {

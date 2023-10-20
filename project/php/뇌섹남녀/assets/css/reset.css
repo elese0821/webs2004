@@ -162,7 +162,13 @@ address {
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'Cafe24Classic';
+  src:url('../fonts/Cafe24Classictype-v1.1.woff') format('woff'),
+      url('../fonts/Cafe24Classictype-v1.1.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+} 
 
 /* 마진 간격 */
 .mt0   {margin-top: 0px !important;}
@@ -201,8 +207,3 @@ address {
 .mb90  {margin-bottom: 90px !important;}
 .mb100 {margin-bottom: 100px !important;}
 
-@font-face {
-  font-family: 'Cafe24Classic';
-  src:url('../fonts/Cafe24Classictype-v1.1.woff') format('woff'),
-      url('../fonts/Cafe24Classictype-v1.1.woff2') format('woff2');
-} 

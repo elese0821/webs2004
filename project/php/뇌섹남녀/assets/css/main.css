@@ -213,8 +213,12 @@ li.active_nav a {
 
 @media(max-width: 550px) {
     .button_light {
+        margin: 0 40px;
         padding: 5px 10px;
         font-size: 0.8rem;
+        font-weight: bold;
+        margin-bottom: -5px;
+        border-radius: 40px;
     }
 
     .saying {
