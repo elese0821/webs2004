@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/board.css">
+    <link rel="stylesheet" href="../assets/css/quiz.css">
+
 </head>
 
 <body>
     <div id="wrap">
         <header id="header">
             <nav class="nav">
-                <ul>
+                <ul class="down_nav">
                     <li class="active"><a href="#">홈</a></li>
                     <li><a href="#">문제</a></li>
                     <li><a href="#">커뮤니티</a></li>
@@ -31,29 +33,26 @@
         <!-- header -->
 
         <main id="main">
-            <div id="b_write_wrap">
-                <div class="write_board"></div>
-                <form action="boardWriteSave.html" name="#" method="#" class="board_write b_p">
-                    <fieldset>
-                        <legend>글 작성하기</legend>
-                        <div>
-                            <label id="b_title" for="title">Title<span class="red_t">*</span></label>
-                            <input type="text" id="boardTitle" name="boardTitle" class="input__style"  placeholder="제목을 입력해주세요">
+            <section id="quiz_section">
+                <div class="quiz_wrap">
+                    <div class="quiz_q_wrap quiz_class">
+                        <div class="q_question">
+                            <div class="question_wrap">
+                                <em>Q<i id="q_em">uiz</i></em>
+                                <p>다음 식에 하나의 선을 그어 참이 되도록 만들어라.
+                                    (단, 등호는 바꿀 수 없다)</p>
+                            </div>
+                            <div class="quiz_url">19 - 18 = 18</div>
                         </div>
-                        <div id="weite_box2">
-                            <label id="boardContents_w" for="boardContents">Contents</label>
-                            <textarea name="boardContents" id="boardContents" rows="20" class="input__style"></textarea>
-                        </div>
-                        <div >
-                            <label for="boardPass" id="boardPass_label">비밀번호</label>
-                            <input type="password" id="boardPass" class="input__style" autocomplete="off" placeholder="글을 수정하려면 로그인 비밀번호를 입력하셔야 합니다." required>
-                        </div>
-                        <div class="board__btns">
-                            <button type="submit" class="btn__style3">저장하기</button>
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
+                    </div>
+                    <div class="q_answer">
+                        <label for="answer">정답 입력하기</label>
+                        <input type="text">
+                    </div>
+                </div>
+            </section>
+
+
         </main>
         <!-- main -->
 

@@ -99,16 +99,32 @@ li.active_nav a {
 @media (max-width: 550px) {
     #header {
         height: 50px;
+        position: relative;
     }
 
+    .loginnav {
+        width: 100%;
+    }
+    .loginnav ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
     .loginnav ul li a {
         padding: 3px 10px;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
+    .nav {
+        position: absolute;
+        width: 146px;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
     .nav ul li a {
         padding: 3px 10px;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .logo {
@@ -123,8 +139,20 @@ li.active_nav a {
     .loginnav ul li:nth-child(1) {
         margin-right: 5px;
     }
+    .nav {
+        width: 100%;
+    }
+    .down_nav{
+        background-color: #CEDFFD;
+        justify-content: center;
+        padding: 3px;
+        z-index: 1000 !important;
+    }
+    .down_nav ul {
+        margin: 0 auto;
+    }
+    
 }
-
 
 /* sayingwrap */
 .sayingWrap {
