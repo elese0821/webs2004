@@ -7,6 +7,13 @@
 
     <link rel="stylesheet" href="../assets/css/style.css">
     <style>
+        .msg {
+            display: none;
+        }
+
+        .green {
+            color: green;
+        }
     </style>
 </head>
 <body>
@@ -21,7 +28,7 @@
             <div class="contents container">
                 <div class="inner">
                     <h1>회원가입</h1>
-                    <form action="join_profil.php" id="join_profil" name="join_profil" method="post" onsubmit="return joinChecks();">
+                    <form action="join_profil.php" name="join_profil" method="post" onsubmit="return joinChecks();">
                         <fieldset>
                             <legend class="blind">회원가입 영역</legend>
                             <p class="msg" id="youNameComment"></p>
@@ -126,7 +133,8 @@
                 success: function (data) {
                     if (data.result == "good") {
                         isEmailCheck = true;
-                        document.forms["join_profil"].submit(); // join_profil 폼 서브미션 실행
+                        // 폼 서브미션 진행
+                        $("form[name='join_profil']").submit();
                     } else {
                         $("#memberEmailMsg").text("이미 존재하는 이메일입니다.");
                         $("#memberEmailMsg").show();
