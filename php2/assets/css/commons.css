@@ -225,6 +225,19 @@
     -webkit-box-orient: vertical;
 }
 
+/* �ㅽ겕濡� �ㅼ씪 */
+.scroll__style::-webkit-scrollbar {
+    width: 8px;  /* �ㅽ겕濡ㅻ컮�� �덈퉬 */
+}
+.scroll__style::-webkit-scrollbar-thumb {
+    height: 30%; /* �ㅽ겕濡ㅻ컮�� 湲몄씠 */
+    background: var(--black400); /* �ㅽ겕濡ㅻ컮�� �됱긽 */
+    border-radius: 20px;
+}
+.scroll__style::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);  /* �ㅽ겕濡ㅻ컮 �� 諛곌꼍 �됱긽 */
+}
+
 /* required */
 .required::after {
     content: ' *';
@@ -256,7 +269,7 @@
     }
 }
 
-/* 留덉쭊 媛꾧꺽 */
+/*  */
 .mt0   {margin-top: 0px !important;}
 .mt10  {margin-top: 10px !important;}
 .mt20  {margin-top: 20px !important;}
