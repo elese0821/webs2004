@@ -249,7 +249,7 @@ strong {
 
 .star li {
     padding: 10px 15px;
-    border: 1px dashed #2f2fa1;
+    border: 1px solid #2f2fa1;
     margin-bottom: 10px;
     border-radius: 20px;
 }
@@ -271,6 +271,11 @@ strong {
 #footer a {
     padding: 10px;
     color: #49498d;
+}
+
+
+.search__star li::after {
+    content: attr(data-desc);
 }
 @media (max-width: 700px ){
     #header {
