@@ -12,11 +12,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Orbit-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/Orbit-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+em {
+    font-style: normal;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "IBMPlexSansKR-Regular";
+    font-family: 'Orbit-Regular';
 }
 
 a {
@@ -49,7 +58,6 @@ body {
 }
 
 #header h1 a {
-    font-family: "KOTRA_BOLD-Bold";
     color: #adc7f8;
 }
 
@@ -88,7 +96,6 @@ main {
 }
 
 .search__title h1 {
-    font-family: "KOTRA_BOLD-Bold";
     color: #2f2fa1;
 }
 
@@ -104,16 +111,12 @@ main {
 
 /* search__box */
 .search__box {
-    display: flex;
-    margin: 0 auto;
-    flex-direction: row-reverse;
-    justify-content: center;
-    font-family: "IBMPlexSansKR-Regular";
-    letter-spacing: 1.5px;
     margin-bottom: 30px;
-    flex-wrap: wrap;
 }
-
+.search__box p {
+    color: #2f2fa1;
+    margin-top: 20px;
+}
 .search__box em {
     text-decoration: underline;
     text-underline-position: under;
@@ -127,7 +130,6 @@ label {
     padding: 10px 30px;
     background-color: #2f2fa1;
     color: #fff;
-    font-family: "IBMPlexSansKR-Regular";
 }
 .search__box input {
     border: none;
@@ -136,8 +138,8 @@ label {
     min-width: 400px;
 }
 #searchBox {
+    width: 100%;
     max-width: 500px;
-    width: 50%;
     border-radius: 10px;
 }
 .search__list li.show {
@@ -210,7 +212,6 @@ label {
 
 strong {
     color: #2f2fa1;
-    font-family: "IBMPlexSansKR-Regular";
     font-weight: bold;
 }
 
@@ -232,9 +233,7 @@ strong {
     background-color: rgba(255,255,255,.3);
     font-weight: bold;
 }
-.search__star {
-    padding: 0 !important;
-}
+
 .search__star li {
     color: #2f2fa1;
     padding: 10px 30px;
@@ -243,20 +242,23 @@ strong {
     display: inline-block;
     margin: 10px 2px;
     cursor: pointer;
+    transition: box-shadow 0.2s,background-color 0.3s,color 0.2s;
 }
-.search__star.star {
+.search__star li{
+    box-shadow: 1px 1px 2px #2f2fa1;
 }
-
+.search__star li:hover {
+    background-color: #7F7FD5;
+    color: #fff;
+    box-shadow: inset 1px 1px 3px #2f2fa1;
+}
 .star li {
     padding: 10px 15px;
     border: 1px solid #2f2fa1;
     margin-bottom: 10px;
     border-radius: 20px;
 }
-.search__box p {
-    color: #2f2fa1;
-    margin-top: 20px;
-}
+
 /* footer */
 #footer {
     height: 60px;

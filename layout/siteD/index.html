@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세계의 미술작품</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <header id="header">
+            <h1 class="logo">세계의 미술작품</h1>
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="#">소장처별</a>
+                        <ul class="submenu">
+                            <li><a href="#">한국</a></li>
+                            <li><a href="#">프랑스</a></li>
+                            <li><a href="#">이탈리아</a></li>
+                            <li><a href="#">독일</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">장르별</a>
+                        <ul class="submenu">
+                            <li><a href="#">회화</a></li>
+                            <li><a href="#">판화</a></li>
+                            <li><a href="#">공예/고대유물</a></li>
+                            <li><a href="#">그 외</a></li>
+                        </ul>    
+                    </li>
+                    <li>
+                        <a href="#">테마별</a>
+                        <ul class="submenu">
+                            <li><a href="#">초상화/인물</a></li>
+                            <li><a href="#">종교</a></li>
+                            <li><a href="#">신화/문학</a></li>
+                            <li><a href="#">일상/스포츠</a></li>
+                        </ul>    
+                    </li>
+                    <li>
+                        <a href="#">시대별</a>
+                        <ul class="submenu">
+                            <li><a href="#">1900년이전</a></li>
+                            <li><a href="#">1900년대</a></li>
+                            <li><a href="#">현대</a></li>
+                            <li><a href="#">그 외</a></li>
+                        </ul>    
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main">
+            <article id="slider">
+                <div class="slideWrap">
+                    <div class="slider s1">
+                        <div class="text">
+                            <h3>text1</h3>
+                            <p>text1-1</p>
+                        </div>
+                    </div>
+
+                    <div class="slider s2">
+                        <div class="text">
+                            <h3>text2</h3>
+                            <p>text2-1</p>
+                        </div>
+                    </div>
+
+                    <div class="slider s3">
+                        <div class="text">
+                            <h3>text3</h3>
+                            <p>text3-1</p>
+                        </div>
+                    </div>
+
+                  
+                </div>
+            </article>
+
+            <section id="contents">
+                <article class="notice popup-btn">
+                        <h2>공지사항</h2>
+                        <ul>
+                            <li><a href="#" class="popupOpen">• 온라인 전시관 안내</a>
+                                <span class="date"> 2022.03.14 </span> </li>
+                            <li><a href="#">• 코로나 관련 관람 유의사항</a>
+                                <span class="date"> 2022.02.14 </span></li>
+                            <li><a href="#">• 비대면 전시회</a>
+                                <span class="date"> 2022.01.14 </span></li>
+                            <li><a href="#">• 집에서 즐기는 전시회 </a>
+                                <span class="date"> 2022.01.01 </span></li>  
+                        </ul>
+                </article>
+
+                <article class="gallery">
+                    <h2>갤러리</h2>
+                        <ul>
+                            <li><a href="#"><img src="../siteD/images/gallery01.png" alt=""></a></li>
+                            <li><a href="#"><img src="../siteD/images/gallery02.png" alt=""></a></li>
+                            <li><a href="#"><img src="../siteD/images/gallery03.png" alt=""></a></li>
+                        </ul>
+                </article>
+
+                <article class="banner">
+                    <h3>6월은 <em>미술의 달</em></h3>
+                    <a href="#">알아보기</a>
+                </article>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <h2 class="footer1">
+                세계의 미술작품
+            </h2>
+            <div class="footer2">
+                copyright@2019
+            </div>
+            <div class="footer3">
+                <ul class="sns">
+                    <li><a href="#"><img src="../siteD/images/face.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="../siteD/images/insta.png" alt="insta"></a></li>
+                    <li><a href="#"><img src="../siteD/images/kakao.png" alt="kakao"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+     <!--팝업창--> 
+    <div class="popup">                                    
+        <h2>온라인 전시회 변경사항</h2>
+        <p>
+        <br />
+        온라인 전시관에 VR이 추가되었습니다. <br />
+        <br />
+        최첨단 초강력 울트라 버츄얼 리얼리티 세상에 오신걸 환영합니다. <br />
+        <br />
+        하루 빨리 코로나가 끝나 만나뵙기를 바래요.
+        <br />
+        </p>
+        <a href="#" class="popup-close"> 닫기 X </a>
+    </div>    
+
+    <script src="script/jquery.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
