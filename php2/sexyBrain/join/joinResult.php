@@ -1,24 +1,30 @@
 <?php
+// session_start();
 
+// include "../connect/connect.php";
+// include "../connect/session.php";
+
+// $_SESSION['youAddress1'] = mysqli_real_escape_string($connect, $_POST['youAddress1']);
+// session_write_close();
 include "../connect/connect.php"; 
 include "../connect/session.php";
 
 $youName = mysqli_real_escape_string($connect, $_POST['youName']);
 $youEmail = mysqli_real_escape_string($connect, $_POST['youEmail']);
 $youPass = mysqli_real_escape_string($connect, $_POST['youPass']);
+$myAddress1 = mysqli_real_escape_string($connect, $_POST['myAddress1']);
 $youRegTime = time();
 
-$sql = "INSERT INTO myMembers ( youName, youEmail, youPass, youRegTime) VALUES ('$youName', '$youEmail', '$youPass', '$youRegTime')";
+$sql = "INSERT INTO sexyMembers ( youName, youEmail, youPass, myAddress, youRegTime) VALUES ('$youName', '$youEmail', '$youPass', '$myAddress1', '$youRegTime')";
 if (mysqli_query($connect, $sql)) {
 } else {
     echo "SQL 오류: " . mysqli_error($connect);
 
 }
 
-// 데이터베이스 연결 닫기
-mysqli_close($connect);
+// // 데이터베이스 연결 닫기
+// mysqli_close($connect);
 ?>
-
 <!DOCTYPE html>
  <html lang="ko">
  <head>
@@ -41,36 +47,25 @@ mysqli_close($connect);
                     <div class="photo"></div>
                     <button class="btn__style4" type="button">이미지 선택</button>
                     
-                    <form action="main.php" name="#main" method="post">
+                    <form action="joinSuccess.php" name="#main" method="post">
                         <fieldset>
                             <legend class="blind">회원가입 영역</legend>
                             
-                            <!-- <div class="locate__wrap">
-                                <label for="locate" class="label required">주소</label>
-                                <div class="check">
-                                    <input type="text" id="locate" name="locate" placeholder="지역을 적어주세요" class="input__box3">
-                                    <button class="btn" id="addressCheck">주소 찾기</button>
-                                    <label for="locate2" class="required blind">주소</label>
-                                    <input type="text" id="locate2" name="locate2" placeholder="주소" class="input__style">
-                                </div>
-                                <p class="msg" id="youAddressComment"></p>
-                            </div> -->
+                   
 
                             <div class="join">
                                 <label for="youAddress1" class="label required">주소</label>
                                 <div class="check">
                                     <input type="text" id="youAddress1" name="youAddress1" placeholder="주소를 적어주세요" class="input__box3">
                                     <button class="btn" id="addressCheck" type="button">주소 찾기</button>
-                                </div>
-                                
+                                </div>                               
                                 <p class="msg" id="youAddressComment"></p>
                             </div>
-
-
+                            <div class="profil__btn">
+                                <button type="button" class="btn__style3">완료</button>
+                            </div> 
+              
                         </fieldset>
-                        <div class="profil__btn">
-                            <button type="button" class="btn__style3"><a href="#">완료</a></button>
-                        </div> 
                     </form>
                 </div>
         
@@ -164,6 +159,11 @@ mysqli_close($connect);
             layer.style.left = (((window.innerWidth || document.documentElement.clientWidth) - width) / 2 - borderWidth) + 'px';
             layer.style.top = (((window.innerHeight || document.documentElement.clientHeight) - height) / 2 - borderWidth) + 'px';
         }
+        document.querySelector('.btn__style3').addEventListener('click', function() {
+        // 사용자가 주소 정보를 입력한 후 "완료" 버튼을 클릭했을 때
+        // joinSuccess.php로 이동하도록 리디렉션합니다.
+        window.location.href = 'joinSuccess.php';
+        });
     </script>
  </body>
  </html>

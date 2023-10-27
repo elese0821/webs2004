@@ -75,3 +75,15 @@
          url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-eHv.ttf') format("truetype");
     font-display: swap;
 } 
+@font-face {
+    font-family: 'Orbit-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/Orbit-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Orbit-Bold';
+    src: url('../fonts/Orbit\ Bold.ttf') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}

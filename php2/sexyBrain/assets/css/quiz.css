@@ -1,0 +1,141 @@
+
+#quiz_section {
+    padding: 50px;
+}
+.q_question em{
+    font-family: "Cafe24Classic";
+    color: #9E3436;
+    font-size: 5rem;
+    margin-right: 2rem;
+}
+.quiz_q_wrap {
+    margin: 100px auto;
+    padding: 50px 50px;
+    background-color: #fff; 
+    margin: 100px auto 70px;
+    padding: 50px 50px;
+    box-shadow: 1px 2px 2px 3px rgba(0,0,0,.1);
+    background-color: #fff;
+    max-width: 1200px;
+}
+.quiz_q_wrap p {
+    font-size: 2rem;
+}
+label {
+    display: none;
+}
+.question_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* quiz_url */
+.quiz_url {
+    padding: 20px;
+}
+/* q_answer */
+.q_answer {
+    display: inline-block;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+
+}
+.q_answer {
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1200px;
+    border: none;
+    box-shadow: 1px 2px 2px 3px rgba(0,0,0,.1);
+    margin-bottom: 100px;
+    overflow:hidden;
+}
+.q_answer input{
+    width: 100%;
+    font-size: 1.5rem;
+    border: none;
+    padding: 40px 150px;
+    border-radius: 20px;
+}
+.quiz_url {
+    font-size: 7rem;
+    font-weight: bold;
+    text-align: center;
+}
+.q_answer::after {
+    content: '😃정답:';
+    position: absolute;
+    z-index: 2;
+    font-size: 1.5rem;
+    top: 50%;
+    left: 50px;
+    transform: translatey(-50%);
+}
+#q_em {
+    display: none;
+    font-style: normal;
+}
+@media (max-width:1250px) {
+    #quiz_section {
+        padding: 40px;
+    }
+    .q_question em {
+        font-size: 2.5rem;
+    }
+    .quiz_q_wrap p {
+        font-size: 1.7rem;
+    }
+    .q_answer input {
+        font-size: 1.6rem;
+        padding: 30px 155px;
+
+    }
+    .quiz_url {
+        font-size: 7rem;
+    }
+    .q_answer::after {
+        font-size: 1.6rem;
+    }
+}
+@media (max-width:850px) {
+    #quiz_section {
+        padding: 20px;
+    }
+    .q_question em {
+        font-size: 2rem;
+        margin-right: 10px;
+    }
+    .quiz_q_wrap p {
+        font-size: 1.1rem;
+    }
+    .q_answer input {
+        font-size: 1.1rem;
+        padding: 25px 120px;
+
+    }
+    .quiz_url {
+        font-size: 3rem;
+    }
+    .q_answer::after {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width:550px){
+    .question_wrap {
+        flex-direction: column;
+    }
+    .quiz_q_wrap  {
+        padding: 20px;
+    }
+    .q_question em {
+        border-radius: 100%;
+        padding: 0 13px;
+
+    }
+    #q_em {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+}

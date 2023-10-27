@@ -83,13 +83,12 @@
                         <div class="join">
                             <label for="youPass" class="required">비밀번호</label>
                             <input type="text" id="youPass" name="youPass" placeholder="비밀번호를 적어주세요!" autocomplete="off" class="input__style">
-                            <p class="msg" id="youPassComment"></p>
                         </div>
 
                         <div class="join">
                             <label for="youPassC" class="required">비밀번호 확인</label>
                             <input type="password" id="youPassC" name="youPassC" placeholder="다시 한번 비밀번호를 적어주세요!" autocomplete="off" class="input__style">
-                            <p class="msg" id="youPassComment"></p>
+                            <p class="msg" id="youPassComment">비밀번호를 확인해주세요!</p>
                         </div>
                     
                         <div class="join">
