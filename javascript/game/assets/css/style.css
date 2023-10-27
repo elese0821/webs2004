@@ -3,12 +3,6 @@
     width: 100%;
     height: 100vh;
 }
-#wrap.bg01 {
-    background-image: url(../img/game.gif);
-    background-size: cover;
-    background-color: #000;
-    background-position: center center;
-}
 video {
     position: absolute;
     top: 0;
@@ -16,6 +10,7 @@ video {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: -1;
 }
 .icon__menu a img {
     width: 100%;
@@ -25,36 +20,70 @@ video {
     height: 50px;
     display: block;
 }
-/* musicWrap */
-#musicWrap {
-    position: absolute;
-    right: 20px;
-    top: 20px;
+/* music__wrap */
+.music__wrap {
+    background-size: contain;
     width: 350px;
-    height: 590px;
-    background-color: #ffffff;
-    padding: 40px 40px;
+    position: absolute;
+    right: 10px;
+    top: 15%;
+    box-shadow: 0 60px 100px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    background-image: url(../img/music_bg01.jpg);
+    background-size: cover;
     border-radius: 20px;
-    filter: blur(5);
-
+    overflow: hidden;
 }
 .music__inner {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    padding: 20px 22px;
+    background: rgba(2, 2, 2, 0.5);
+
 }
 .music__view {
-    background-image: url(../img/music_bg05.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 260px;
-    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 50px;
+    padding: 0 5px 5px 5px;
+    width: 80%;
 }
 .music__header {
     margin-bottom: 20px;
 }
+
 .music__header h2 {
     text-align: center;
+    font-size: 14px;
+    padding: 3px;
+    font-family: "Poppins";
+    font-weight: 200;
+    margin-top: 13px;
 }
-.music__contents {}
+.music__view .image img {
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(20, 20, 20, 0.644);
+    margin-top: 20px;
+}
+.music__control .timer {
+    margin-top: 190px;
+    padding-top: 120px;
+}
 .music__control {
+    height: 330px;
+    border-radius: 20px;
 }
-.music__list {}
+.music__control .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.music__control .title h3 {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.music__control .title p {
+    font-size: 20px;
+}

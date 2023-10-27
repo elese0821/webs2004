@@ -1,0 +1,20 @@
+/* music__wrap 
+    +music__inner
+        +music__header
+        +music__contents
+            +music__view
+            +music__control
+        +music__footer
+*/
+.music__wrap {
+}
+
+
+
+.music__control {
+    background-color: #fff;
+    height: 330px;
+    border-radius: 20px;
+    margin-top: 160px;
+    padding: 20px;
+}
