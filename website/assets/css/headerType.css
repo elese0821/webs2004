@@ -1,7 +1,4 @@
 /* headerType */
-#headerType {
-}
-.header__wrap {}
 .header__inner {
     height: 70px;
     display: flex;
