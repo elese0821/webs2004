@@ -4,55 +4,60 @@
     font-style: normal;
     src: url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Light.eot");
     src: url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Light.eot?#iefix") format("embedded-opentype"),
-         url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Light.woff2") format("woff2"),
-         url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Light.woff") format("woff"),
-         url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Light.ttf") format("truetype");
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Light.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Light.woff") format("woff"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Light.ttf") format("truetype");
     font-display: swap;
-} 
+}
+
 @font-face {
     font-family: "nanumSquareNeo";
     font-weight: 400;
     font-style: normal;
     src: url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Regular.eot");
     src: url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Regular.eot?#iefix") format("embedded-opentype"),
-         url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Regular.woff2") format("woff2"),
-         url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Regular.woff") format("woff"),
-         url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Regular.ttf") format("truetype");
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Regular.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Regular.woff") format("woff"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Regular.ttf") format("truetype");
     font-display: swap;
-} 
+}
+
 @font-face {
     font-family: "nanumSquareNeo";
     font-weight: 700;
     font-style: normal;
     src: url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Bold.eot");
     src: url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Bold.eot?#iefix") format("embedded-opentype"),
-         url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Bold.woff2") format("woff2"),
-         url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Bold.woff") format("woff"),
-         url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Bold.ttf") format("truetype");
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Bold.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Bold.woff") format("woff"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Bold.ttf") format("truetype");
     font-display: swap;
-} 
+}
+
 @font-face {
     font-family: "nanumSquareNeo";
     font-weight: 800;
     font-style: normal;
     src: url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-ExtraBold.eot");
     src: url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-ExtraBold.eot?#iefix") format("embedded-opentype"),
-         url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-ExtraBold.woff2") format("woff2"),
-         url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-ExtraBold.woff") format("woff"),
-         url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-ExtraBold.ttf") format("truetype");
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-ExtraBold.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-ExtraBold.woff") format("woff"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-ExtraBold.ttf") format("truetype");
     font-display: swap;
-} 
+}
+
 @font-face {
     font-family: "nanumSquareNeo";
     font-weight: 900;
     font-style: normal;
     src: url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Black.eot");
     src: url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Black.eot?#iefix") format("embedded-opentype"),
-         url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Black.woff2") format("woff2"),
-         url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Black.woff") format("woff"),
-         url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Black.ttf") format("truetype");
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Black.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Black.woff") format("woff"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquareNeo/nanumSquareNeo-Black.ttf") format("truetype");
     font-display: swap;
-} 
+}
+
 /* reset */
 * {
     margin: 0;
@@ -61,9 +66,11 @@
     box-sizing: border-box;
     font-size: 16px;
 }
+
 li {
     list-style: none;
 }
+
 a {
     text-decoration: none;
     color: #000;
@@ -76,14 +83,16 @@ body {
     background-repeat: no-repeat;
     position: relative;
 }
+
 body.fixed {
     background-attachment: fixed;
 }
+
 body::after {
     content: '';
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
     left: 0;
     top: 0;
@@ -102,24 +111,29 @@ body::after {
     align-items: center;
     justify-content: space-between;
 }
+
 #header.fix {
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
 }
+
 #header h1 a {
     display: inline-block;
     color: #fff;
     padding: 20px;
     font-size: 30px;
 }
+
 #header nav {
     padding-right: 20px;
 }
+
 #header nav li {
     display: inline-block;
 }
+
 #header nav li a {
     padding: 10px;
     display: inline-block;
@@ -131,6 +145,7 @@ body::after {
     line-height: 1;
     color: #fff;
 }
+
 #header nav li.active a {
     background-color: #fff;
     color: #000;
@@ -148,33 +163,38 @@ body::after {
     flex-wrap: wrap;
     margin-top: 40px;
 }
-.quiz__wrap > .quiz {
+
+.quiz__wrap>.quiz {
     width: 500px;
     min-height: 400px;
     background-color: #fff;
     padding: 40px 30px;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
     margin: 10px;
 }
-.quiz__wrap > .quiz.good {
+
+.quiz__wrap>.quiz.good {
     position: relative;
 }
-.quiz__wrap > .quiz.good::before {
+
+.quiz__wrap>.quiz.good::before {
     content: '';
     width: 100px;
     height: 100px;
     border: 10px solid red;
     border-radius: 50%;
     position: absolute;
-    left: 20px; 
+    left: 20px;
     top: 20px;
     z-index: 100;
 }
-.quiz__wrap > .quiz.bad {
+
+.quiz__wrap>.quiz.bad {
     position: relative;
 }
-.quiz__wrap > .quiz.bad::before {
+
+.quiz__wrap>.quiz.bad::before {
     content: '';
     width: 150px;
     height: 10px;
@@ -186,7 +206,8 @@ body::after {
     transform: rotate(45deg);
     z-index: 100;
 }
-.quiz__wrap > .quiz.bad::after {
+
+.quiz__wrap>.quiz.bad::after {
     content: '';
     width: 150px;
     height: 10px;
@@ -198,49 +219,61 @@ body::after {
     transform: rotate(-45deg);
     z-index: 100;
 }
+
 .quiz__header {
     margin-bottom: 20px;
     color: #696969;
 }
+
 .quiz__date {
     display: inline-block;
     margin-right: 5px;
     color: #696969;
 }
+
 .quiz__type {
     color: #696969;
 }
+
 .quiz__main {}
+
 .quiz__question {
     margin-bottom: 20px;
     font-size: 24px;
     font-weight: 400;
     line-height: 1.5;
 }
+
 .quiz__question em {
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
 }
+
 .quiz__question span {
     font-size: 24px;
     line-height: 1.5;
     font-weight: 400;
 }
+
 .quiz__img {
     margin-bottom: 10px;
 }
+
 .quiz__img img {
     width: 100%;
     border: 1px solid #eee;
 }
+
 .quiz__choice {
     margin-bottom: 20px;
 }
+
 .quiz__choice label {
     display: block;
     width: 100%;
 }
+
 .quiz__choice label input {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -249,6 +282,7 @@ body::after {
     margin: -1px;
     overflow: hidden;
 }
+
 .quiz__choice label span {
     position: relative;
     display: flex;
@@ -262,11 +296,13 @@ body::after {
     font-weight: 400;
     cursor: pointer;
 }
+
 .quiz__choice label span:hover {
     border-color: #6d89d4;
     color: #6d89d4;
     box-shadow: 1px 1px 5px #422e9160;
 }
+
 .quiz__choice label span::before {
     content: '';
     width: 24px;
@@ -277,15 +313,18 @@ body::after {
     margin-right: 15px;
     transition: all 0.3s;
 }
-.quiz__choice label input:checked + span::before {
+
+.quiz__choice label input:checked+span::before {
     box-shadow: inset 0 0 0 9px #6d89d4;
 }
-.quiz__choice label input:checked + span {
+
+.quiz__choice label input:checked+span {
     border-color: #6d89d4;
     color: #6d89d4;
     box-shadow: 1px 1px 5px #422e9160;
     background-color: #e9e4ff60;
 }
+
 .quiz__choice .choice {
     border: 1px solid #eee;
     padding: 17px;
@@ -296,11 +335,13 @@ body::after {
     border-radius: 3px;
     color: #666;
 }
+
 .quiz__choice .choice:hover {
     border-color: #9378ff;
     background-color: #f6f4ff;
     cursor: pointer;
 }
+
 .quiz__choice .choice.correct {
     position: relative;
     border-color: #6d89d4;
@@ -308,6 +349,7 @@ body::after {
     color: #6d89d4;
     padding-right: 57px;
 }
+
 .quiz__choice .choice.correct::after {
     content: '';
     width: 14px;
@@ -319,6 +361,7 @@ body::after {
     top: 50%;
     transform: translateY(-50%);
 }
+
 .quiz__choice .choice.incorrect {
     position: relative;
     border-color: #912e3a;
@@ -327,6 +370,7 @@ body::after {
     color: #912e3a;
     padding-right: 57px;
 }
+
 .quiz__choice .choice.incorrect::before {
     content: '';
     position: absolute;
@@ -340,6 +384,7 @@ body::after {
     transform: rotate(45deg);
     margin-top: -3px;
 }
+
 .quiz__choice .choice.incorrect::after {
     content: '';
     position: absolute;
@@ -358,15 +403,18 @@ body::after {
     border: 1px dashed #6d89d4;
     margin-bottom: 10px;
 }
+
 .quiz__input {
     margin-bottom: 10px;
 }
+
 .quiz__input input {
     width: 100%;
     padding: 20px;
     border: 1px solid #6d89d4;
     border-radius: 3px;
 }
+
 .quiz__answer {
     background-color: #f5f2ff;
     border: 1px solid #6d89d4;
@@ -375,9 +423,11 @@ body::after {
     line-height: 1.5;
     color: #666;
 }
+
 .quiz__answer::before {
-    content:  "★:";
+    content: "😁 정답:";
 }
+
 .quiz__desc {
     border: 1px solid #eaeaea;
     padding: 20px;
@@ -385,9 +435,11 @@ body::after {
     line-height: 1.5;
     color: #666;
 }
+
 .quiz__desc::before {
-    content: "�Ⅳ �ㅻ챸 : ";
+    content: "😊 설명: ";
 }
+
 .quiz__footer {}
 
 .quiz__confirm {
@@ -402,12 +454,14 @@ body::after {
     border: 1px dashed transparent;
     border-radius: 3px;
 }
+
 .quiz__confirm:hover {
     border: 1px dashed #6d89d4;
     background-color: transparent;
     color: #6d89d4;
     cursor: pointer;
 }
+
 .quiz__next {
     width: 100%;
     border: 1px dashed #6d89d4;
@@ -417,15 +471,18 @@ body::after {
     color: #6d89d4;
     transition: all 0.3s;
 }
+
 .quiz__next:hover {
     background-color: #f5f2ff;
 }
+
 .quiz__indicator {
     background-color: #f5f2ff;
     padding: 20px;
     border-radius: 3px;
     margin-bottom: 20px;
 }
+
 .quiz__indicator span {
     display: inline-block;
     width: 20px;
@@ -433,10 +490,12 @@ body::after {
     border: 1px solid #6d89d4;
     box-shadow: 1px 1px #6d89d4;
 }
+
 .quiz__indicator span.correct {
     background-color: #6d89d4;
     position: relative;
 }
+
 .quiz__indicator span.correct::before {
     content: '';
     width: 8px;
@@ -444,12 +503,14 @@ body::after {
     border: 4px solid #fff;
     border-radius: 50%;
     position: absolute;
-    left: 1px; 
+    left: 1px;
     top: 1px;
 }
+
 .quiz__indicator span.incorrect {
     position: relative;
 }
+
 .quiz__indicator span.incorrect::before {
     content: '';
     position: absolute;
@@ -461,6 +522,7 @@ body::after {
     background-color: #6d89d4;
     transform: rotate(-45deg);
 }
+
 .quiz__indicator span.incorrect::after {
     content: '';
     position: absolute;
@@ -472,6 +534,7 @@ body::after {
     background-color: #6d89d4;
     transform: rotate(45deg);
 }
+
 .quiz__check {
     position: fixed;
     right: 20px;
@@ -487,6 +550,7 @@ body::after {
     transition: all 0.3s;
     border: 1px dashed transparent;
 }
+
 .quiz__check:hover {
     background-color: #e1d9ff;
     border: 1px dashed #6d89d4;
@@ -498,73 +562,91 @@ body::after {
     text-align: center;
     font-size: 14px;
 }
+
 #footer a {
     display: block;
     color: #fff;
     padding: 40px;
 }
+
 #footer a:hover {
     text-decoration: underline;
     text-underline-position: under;
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
     #header {
         flex-direction: column;
     }
+
     #header h1 a {
         padding: 15px;
     }
+
     #header nav {
         padding-right: 0;
         margin-bottom: 20px;
     }
+
     #header nav li a {
         width: 30px;
         height: 30px;
         padding: 7px;
     }
+
     .quiz__wrap {
         padding: 0 6px;
         margin-top: 0;
     }
-    .quiz__wrap > .quiz {
+
+    .quiz__wrap>.quiz {
         width: 100%;
         padding: 30px 20px;
     }
+
     .quiz__header {
         margin-bottom: 20px;
         font-size: 14px;
     }
+
     .quiz__date {
         font-size: 14px;
     }
+
     .quiz__type {
         font-size: 14px;
     }
+
     .quiz__question {
         margin-bottom: 20px;
         line-height: 1.5;
         font-size: 20px;
     }
+
     .quiz__question em {
         font-size: 20px;
     }
+
     .quiz__question span {
         font-size: 20px;
     }
+
     .quiz__input input {
         padding: 14px;
     }
+
     .quiz__answer {
         padding: 14px;
     }
+
     .quiz__desc {
         padding: 14px;
     }
+
     .quiz__choice label span {
         padding: 13px;
     }
+
     .quiz__confirm {
         padding: 13px;
     }
@@ -585,11 +667,13 @@ body::after {
     text-align: center;
     z-index: 100;
 }
+
 .cbt__box h2 {
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
 }
+
 .cbt__box select {
     width: 100%;
     border: 1px solid #eee;
@@ -597,37 +681,43 @@ body::after {
     margin-bottom: 10px;
     font-size: 18px;
 }
+
 .cbt__box p {
     font-size: 20px;
     line-height: 2;
     text-align: center;
     margin-top: 20px;
 }
+
 .cbt__box p i {
     font-size: 16px;
     color: #666;
     font-style: normal;
 }
+
 .cbt__box em {
     font-style: normal;
     font-size: 20px;
     position: relative;
 }
+
 .cbt__box em::before {
     content: '';
     width: 100%;
     height: 50%;
     background-color: #b0c2f5b6;
     position: absolute;
-    left: 0; 
+    left: 0;
     bottom: 0;
     z-index: -1;
 }
+
 .cbt__box input {
     border: 1px solid #6d89d4;
     padding: 10px 20px;
     border-radius: 40px;
 }
+
 .cbt__box button {
     display: inline-block;
     border: 1px solid #6d89d4;
@@ -682,20 +772,23 @@ body::after {
     padding: 20px;
     overflow-y: auto;
 }
+
 .cbt__conts {
     width: calc(100% - 260px);
     height: 100%;
     background-color: #fff;
     padding: 100px 20px 20px 20px;
-    border-radius: 10px ;
+    border-radius: 10px;
     overflow-y: auto;
 }
+
 .cbt__quiz {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
 }
+
 .cbt__quiz::after {
     content: '';
     width: 1px;
@@ -705,26 +798,32 @@ body::after {
     left: 50%;
     top: 0;
 }
+
 .cbt__quiz .cbt {
     width: 48%;
     margin-bottom: 50px;
     padding: 20px;
 }
+
 .cbt__question {
     font-size: 20px;
     line-height: 1.6;
     position: relative;
 }
+
 .cbt__choices {
     margin-top: 15px;
 }
+
 .cbt__choices label {
     display: flex;
 }
+
 .cbt__choices input {
     position: absolute;
     left: -9999px;
 }
+
 .cbt__choices label span {
     font-size: 16px;
     line-height: 1.5;
@@ -735,9 +834,11 @@ body::after {
     color: #444;
     position: relative;
 }
+
 .cbt__choices label span::before {
     position: absolute;
-    left: 0; top: 50%;
+    left: 0;
+    top: 50%;
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
@@ -751,32 +852,41 @@ body::after {
     line-height: 1.6;
     font-family: 'Helvetica Neue';
 }
+
 .cbt__choices label:nth-of-type(1) span::before {
     content: '1';
-} 
+}
+
 .cbt__choices label:nth-of-type(2) span::before {
     content: '2';
-} 
+}
+
 .cbt__choices label:nth-of-type(3) span::before {
     content: '3';
-} 
+}
+
 .cbt__choices label:nth-of-type(4) span::before {
     content: '4';
-} 
-.cbt__choices label input:checked + span {
+}
+
+.cbt__choices label input:checked+span {
     color: #000;
 }
-.cbt__choices input:checked + label span::before {
+
+.cbt__choices input:checked+label span::before {
     box-shadow: inset 0px 0px 0px 10px #000;
     color: #fff;
 }
+
 .cbt__choices label.good span::before {
     box-shadow: inset 0px 0px 0px 10px rgb(255, 0, 0);
     color: #fff;
 }
+
 .cbt__info {
     display: flex;
 }
+
 .cbt__time {
     background-color: #6d89d4;
     color: #fff;
@@ -786,6 +896,7 @@ body::after {
     cursor: pointer;
     position: relative;
 }
+
 .cbt__time::before {
     content: '';
     width: 24px;
@@ -796,6 +907,7 @@ body::after {
     background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' fill='%23000000' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' fill='none'%3E%3C/rect%3E%3Cpolyline points='128 72 128 128 184 128' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='16'%3E%3C/polyline%3E%3Ccircle cx='128' cy='128' r='88' fill='none' stroke='%23fff' stroke-miterlimit='10' stroke-width='16'%3E%3C/circle%3E%3Cline x1='195.9' y1='26.2' x2='229.8' y2='60.1' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='16'%3E%3C/line%3E%3Cline x1='26.2' y1='60.1' x2='60.1' y2='26.2' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='16'%3E%3C/line%3E%3C/svg%3E");
     background-size: cover;
 }
+
 .cbt__name {
     background-color: #6d89d4;
     color: #fff;
@@ -804,6 +916,7 @@ body::after {
     text-align: center;
     margin-bottom: 10px;
 }
+
 .cbt__submit {
     background-color: #6d89d4;
     color: #fff;
@@ -812,6 +925,7 @@ body::after {
     text-align: center;
     cursor: pointer;
 }
+
 .cbt__giveup {
     background-color: #6d89d4;
     color: #fff;
@@ -821,6 +935,7 @@ body::after {
     cursor: pointer;
     margin-top: 10px;
 }
+
 .cbt__again {
     background-color: #6d89d4;
     color: #fff;
@@ -830,6 +945,7 @@ body::after {
     cursor: pointer;
     margin-top: 10px;
 }
+
 .cbt__desc {
     border: 1px solid #f2f2f2;
     padding: 10px 20px 10px 38px;
@@ -840,6 +956,7 @@ body::after {
     line-height: 1.6;
     position: relative;
 }
+
 .cbt__desc::before {
     content: '';
     position: absolute;
@@ -850,9 +967,11 @@ body::after {
     background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' fill='%236d89d4' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' fill='none'%3E%3C/rect%3E%3Ccircle cx='128' cy='128' r='96' fill='none' stroke='%236d89d4' stroke-linecap='round' stroke-linejoin='round' stroke-width='16'%3E%3C/circle%3E%3Ccircle cx='128' cy='180' r='12'%3E%3C/circle%3E%3Cpath d='M128,144v-8a28,28,0,1,0-28-28' fill='none' stroke='%236d89d4' stroke-linecap='round' stroke-linejoin='round' stroke-width='16'%3E%3C/path%3E%3C/svg%3E");
     background-size: cover;
 }
+
 .cbt__omr {
     margin-top: 20px;
 }
+
 .cbt__omr .omr {
     margin: 5px 0;
     position: relative;
@@ -861,12 +980,14 @@ body::after {
     grid-template-rows: 20px;
     align-items: center;
 }
+
 .cbt__omr .omr input {
     opacity: 0;
     position: absolute;
     width: 0;
     height: 0;
 }
+
 .cbt__omr .omr strong {
     display: inline-block;
     text-align: center;
@@ -876,6 +997,7 @@ body::after {
     color: #fff;
     margin-right: 10px;
 }
+
 .cbt__omr .omr label {
     text-align: center;
     width: 28px;
@@ -886,6 +1008,7 @@ body::after {
     font-weight: 900;
     position: relative;
 }
+
 .cbt__omr .omr label::after {
     content: '';
     background-color: #6d89d4;
@@ -897,9 +1020,11 @@ body::after {
     height: 100%;
     transition: width 0.1s linear;
 }
-.cbt__omr .omr input[type=radio]:checked + label::after {
+
+.cbt__omr .omr input[type=radio]:checked+label::after {
     width: 100%;
 }
+
 .cbt__omr .omr .label-inner {
     background-color: #fff;
     width: 30px;
@@ -908,52 +1033,65 @@ body::after {
 }
 
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
     .cbt__quiz {
         flex-direction: column;
     }
+
     .cbt__quiz .cbt {
         width: 100%;
     }
+
     .cbt__quiz::after {
         display: none;
     }
+
     .cbt__header {
         flex-direction: column;
     }
+
     .cbt__title {
         font-size: 20px;
         margin-bottom: 17px;
     }
 }
-@media (max-width: 800px){
+
+@media (max-width: 800px) {
     .cbt__header {
         width: calc(100% - 40px);
     }
+
     .cbt__conts {
         padding-top: 120px;
         width: 100%;
     }
+
     .cbt__quiz .cbt {
         padding: 0;
     }
+
     .cbt__question {
         font-size: 18px;
     }
+
     .cbt__aside {
         position: relative;
         left: 0;
         top: 40px;
     }
-    .cbt__name, .cbt__omr {
+
+    .cbt__name,
+    .cbt__omr {
         display: none;
     }
+
     .cbt__submit {
         position: fixed;
         right: 30px;
         bottom: 30px;
     }
 }
+
 .cbt__answer {
     border: 1px solid #f2f2f2;
     padding: 10px 20px 10px 88px;
@@ -964,6 +1102,7 @@ body::after {
     line-height: 1.6;
     position: relative;
 }
+
 .cbt__answer::before {
     content: '';
     position: absolute;
@@ -974,32 +1113,38 @@ body::after {
     background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' fill='%236d89d4' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' fill='none'%3E%3C/rect%3E%3Cline x1='96' y1='128' x2='160' y2='128' fill='none' stroke='%236d89d4' stroke-linecap='round' stroke-linejoin='round' stroke-width='16'%3E%3C/line%3E%3Cline x1='96' y1='160' x2='160' y2='160' fill='none' stroke='%236d89d4' stroke-linecap='round' stroke-linejoin='round' stroke-width='16'%3E%3C/line%3E%3Cpath d='M56,40H200a8,8,0,0,1,8,8V200a24,24,0,0,1-24,24H72a24,24,0,0,1-24-24V48A8,8,0,0,1,56,40Z' fill='none' stroke='%236d89d4' stroke-linecap='round' stroke-linejoin='round' stroke-width='16'%3E%3C/path%3E%3Cline x1='80' y1='24' x2='80' y2='56' fill='none' stroke='%236d89d4' stroke-linecap='round' stroke-linejoin='round' stroke-width='16'%3E%3C/line%3E%3Cline x1='128' y1='24' x2='128' y2='56' fill='none' stroke='%236d89d4' stroke-linecap='round' stroke-linejoin='round' stroke-width='16'%3E%3C/line%3E%3Cline x1='176' y1='24' x2='176' y2='56' fill='none' stroke='%236d89d4' stroke-linecap='round' stroke-linejoin='round' stroke-width='16'%3E%3C/line%3E%3C/svg%3E");
     background-size: cover;
 }
+
 .cbt__answer::after {
     content: '정답은 : ';
     position: absolute;
     left: 35px;
     top: 10px;
 }
+
 .cbt__question__desc {
     border: 1px solid #eaeaea;
     padding: 10px;
     margin-top: 10px;
     color: #666;
 }
+
 .cbt__question__img {
     border: 1px solid #eaeaea;
     margin-top: 10px;
     padding: 20px;
     text-align: center;
 }
+
 .cbt__question__img img {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
 }
+
 .cbt.good {
     position: relative;
 }
+
 .cbt.good::before {
     content: '';
     width: 100px;
@@ -1007,13 +1152,15 @@ body::after {
     border: 10px solid red;
     border-radius: 50%;
     position: absolute;
-    left: 20px; 
+    left: 20px;
     top: 20px;
     z-index: 100;
 }
+
 .cbt.bad {
     position: relative;
 }
+
 .cbt.bad::before {
     content: '';
     width: 150px;
@@ -1026,6 +1173,7 @@ body::after {
     transform: rotate(45deg);
     z-index: 100;
 }
+
 .cbt.bad::after {
     content: '';
     width: 150px;
