@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: top;
+    width: 100%;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#aside {
+    width: 200px;
+    height: 850px;
+}
+
+.logo {
+    padding: 2rem 1rem;
+}
+
+.nav {
+    padding: 2rem;
+    font-size: 1.1rem;
+}
+
+.nav>ul>li>a {
+    padding: 0.5rem;
+    background-color: #fff;
+    display: block;
+}
+
+.submenu {
+    font-size: 1rem;
+    display: none;
+}
+
+.submenu li a {
+    display: block;
+    background-color: #e6e9e5;
+    padding: 0.5rem;
+}
+
+#main {
+    width: calc(100% - 200px);
+    height: 850px;
+}
+
+.sliderWrap li a {
+    display: block;
+    width: 100px;
+    height: 80px;
+}
+
+.sliderWrap ul {
+    display: inline-block;
+    position: relative;
+    position: absolute;
+    right: 0;
+}
+
+.sliderWrap {
+    height: 400px;
+    overflow: hidden;
+}
+
+.slider_wrap {
+    height: 1600px;
+}
+
+.slider {
+    height: 400px;
+}
+
+.s1 {
+    background-image: url("https://www.joavalleycc.co.kr/site_data/banner_mst/1455608187_JUdyGS6o_visualimag.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.s2 {
+    background-image: url("https://www.joavalleycc.co.kr/site_data/banner_mst/1455608187_f4vEtZGR_visualimag.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.s3 {
+    background-image: url("https://www.joavalleycc.co.kr/site_data/banner_mst/1455608187_ry8AfPYD_visualimag.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.link li a {
+    background-color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    padding: 1rem;
+    background-color: #e6e9e5;
+}
+
+.bannerimg {
+    height: 200px;
+    background-image: url("https://www.joavalleycc.co.kr/site_data/banner_mst/1590476727_YmUDHM0J_visualimag.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.contents {
+    height: 250px;
+}
+
+.contents {
+    padding: 1rem;
+}
+
+.cont {
+    display: flex;
+}
+
+.cont h2 {
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+#footer {
+    display: flex;
+    width: 100%;
+}
+
+.footer1 img {
+    filter: grayscale(1);
+}
+
+.footer1 {
+    height: 100px;
+    width: 20%;
+    padding: 1.5rem 1rem;
+}
+
+.footer2 {
+    height: 100px;
+    width: 60%;
+}
+
+.footer3 {
+    height: 100px;
+    width: 20%;
+}
